@@ -21,7 +21,13 @@
 
     <!-- custom.css-->
     <link rel="stylesheet" type="text/css" href="/assets/built/custom.css" />
-  
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 웹폰트 추가-->
+    <link rel="stylesheet" type="text/css" href="//cdn.rawgit.com/young-ha/webfont-archive/master/css/Godo.css">
+
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
@@ -57,7 +63,8 @@
 
 가영ㅇ
 sdf\n
-dsff
+ASFDSKDJFLDFJ
+SDKLFNndfksdfn
 " />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-greedy" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/built/images/moony_cities.png" />
@@ -78,7 +85,8 @@ dsff
 
 가영ㅇ
 sdf\n
-dsff
+ASFDSKDJFLDFJ
+SDKLFNndfksdfn
 " />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/built/images/moony_cities.png" />
@@ -121,7 +129,8 @@ dsff
 
 가영ㅇ
 sdf\n
-dsff
+ASFDSKDJFLDFJ
+SDKLFNndfksdfn
 "
 }
     </script>
@@ -179,7 +188,7 @@ into the {body} of the default.hbs template -->
             
         </div>
         
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+            <a class="subscribe-button" href="#subscribe">Search</a>
         
     </div>
 </nav>
@@ -224,7 +233,8 @@ into the {body} of the default.hbs template -->
 
 <p>가영ㅇ
 sdf\n
-dsff</p>
+ASFDSKDJFLDFJ
+SDKLFNndfksdfn</p>
 
                 </div>
             </section>
@@ -234,16 +244,25 @@ dsff</p>
                 <section class="subscribe-form">
                     <h3 class="subscribe-form-title">Subscribe to Moony Vibes</h3>
                     <p>Get the latest posts delivered right to your inbox</p>
-                    <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+                    <span id="searchform" method="posts" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm" />
+    <input class="location" type="hidden" name="location" />
+    <input class="referrer" type="hidden" name="referrer" />
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input class="subscribe-email" onkeyup="myFunc()"
+            id="searchtext" type="text" name="searchtext"
+            placeholder="Search..." />
     </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
-
+    <script type="text/javascript">
+        function myFunc() {
+            if(event.keyCode == 13){
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
                 </section>
             
             -->
@@ -531,18 +550,28 @@ dsff</p>
             <a class="subscribe-overlay-close" href="#"></a>
             <div class="subscribe-overlay-content">
                 
-                <h1 class="subscribe-overlay-title">Subscribe to Moony Vibes</h1>
-                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-                <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
+                <h1 class="subscribe-overlay-title">Search Moony Vibes</h1>
+                <p class="subscribe-overlay-description">
+                <!-- Blog Posts </p> -->
+                <span id="searchform" method="posts" action="/subscribe/" class="">
+    <input class="confirm" type="hidden" name="confirm" />
+    <input class="location" type="hidden" name="location" />
+    <input class="referrer" type="hidden" name="referrer" />
 
     <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
+        <input class="subscribe-email" onkeyup="myFunc()"
+            id="searchtext" type="text" name="searchtext"
+            placeholder="Search..." />
     </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
-
+    <script type="text/javascript">
+        function myFunc() {
+            if(event.keyCode == 13){
+                var url = encodeURIComponent($("#searchtext").val());
+                location.href = "/search.html?query=" + url;
+            }
+        }
+    </script>
+</span>
             </div>
         </div>
     

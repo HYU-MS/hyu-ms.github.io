@@ -11,7 +11,7 @@
 
 
 
-    <title>Moony Vibes</title>
+    <title>Search Result</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -46,19 +46,19 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="IT&Finance" />
     <link rel="shortcut icon" href="https://hyu-ms.github.io/assets/built/images/무니아이콘.png" type="image/png" />
-    <link rel="canonical" href="https://hyu-ms.github.io/" />
+    <link rel="canonical" href="https://hyu-ms.github.io/search" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Moony Vibes" />
+    <meta property="og:title" content="Search Result" />
     <meta property="og:description" content="IT&Finance" />
-    <meta property="og:url" content="https://hyu-ms.github.io/" />
+    <meta property="og:url" content="https://hyu-ms.github.io/search" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/built/images/moony_cities.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Moony Vibes" />
+    <meta name="twitter:title" content="Search Result" />
     <meta name="twitter:description" content="IT&Finance" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/built/images/moony_cities.png" />
@@ -78,7 +78,7 @@
         "name": "Moony Vibes",
         "logo": "https://hyu-ms.github.io/"
     },
-    "url": "https://hyu-ms.github.io/",
+    "url": "https://hyu-ms.github.io/search",
     "image": {
         "@type": "ImageObject",
         "url": "https://hyu-ms.github.io/assets/built/images/moony_cities.png",
@@ -87,7 +87,7 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hyu-ms.github.io/"
+        "@id": "https://hyu-ms.github.io/search"
     },
     "description": "IT&Finance"
 }
@@ -102,11 +102,11 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Moony Vibes" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Search Result" href="/feed.xml" />
 
 
 </head>
-<body class="home-template">
+<body class="page-template">
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
@@ -115,18 +115,14 @@
 into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer " style="background-image:  url(/assets/built/images/moony_cities.png) ">
+<header class="site-header outer">
     <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                
-                    Moony Vibes
-                
-            </h1>
-            <h2 class="site-description">IT&Finance</h2>
-        </div>
         <nav class="site-nav">
     <div class="site-nav-left">
+        
+            
+                <a class="site-nav-logo" href="https://hyu-ms.github.io/">Moony Vibes</a>
+            
         
         
             <ul class="nav" role="menu">
@@ -158,212 +154,88 @@ into the {body} of the default.hbs template -->
     </div>
 </header>
 
-<!-- The main content area -->
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+        <article class="post-full  post page no-image">
+
+            <header class="post-full-header">
+                <h1 class="post-full-title">Search Result</h1>
+            </header>
+
             
 
+            <section class="post-full-content">
+                <form action="/search" method="get" hidden="hidden">
+    <label for="search-box"></label>
+    <input type="text" id="search-box" name="query">
+</form>
 
-    <article class="post-card home-template">
-        
-            <a class="post-card-image-link" href="/life-gogo">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/moony_desert.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/life-gogo">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Life</span>
-                            
-                        
-                    
+<ul class="mylist" id="search-results"></ul>
 
-                    <h2 class="post-card-title">moony life</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>라이프 성공!
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/무니아이콘.png" alt="Seok Moon" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/moonyvibes/">Seok Moon</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
+<script>
+    window.store = {
+    
+    "life-gogo": {
+        "title": "moony life",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "라이프 성공!",
+        "url": "/life-gogo"
+    }
+    ,
+    
+    "algo-implementation": {
+        "title": "알고리즘 (2) - 구현",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "알고리즘 목차     알고리즘 (1) - 그리디    알고리즘 (2) - 구현알고 성공!",
+        "url": "/algo-implementation"
+    }
+    ,
+    
+    "algo-greedy": {
+        "title": "알고리즘 (1) - 그리디",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "알고리즘 목차     알고리즘 (1) - 그리디    알고리즘 (2) - 구현알고 성공! ㄴㅇㄹ가영ㅇsdf\\nASFDSKDJFLDFJSDKLFNndfksdfn",
+        "url": "/algo-greedy"
+    }
+    ,
+    
+    "sdf-gogo": {
+        "title": "moony finance",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "안녕하세요~~",
+        "url": "/sdf-gogo"
+    }
+    
+    
+    };
+</script>
+<script src="assets/js/lunr.js"></script>
+<script src="assets/js/search.js"></script>
+            </section>
 
-    <article class="post-card home-template no-image">
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/algo-implementation">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Algorithm</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">알고리즘 (2) - 구현</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>알고리즘 목차 
-
-    알고리즘 (1) - 그리디
-    알고리즘 (2) - 구현
-
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/무니아이콘.png" alt="Seok Moon" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/moonyvibes/">Seok Moon</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-    <article class="post-card home-template no-image">
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/algo-greedy">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Algorithm</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">알고리즘 (1) - 그리디</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>알고리즘 목차 
-
-    알고리즘 (1) - 그리디
-    알고리즘 (2) - 구현
-
-알고 성공! 
-ㄴㅇㄹ
-
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/무니아이콘.png" alt="Seok Moon" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/moonyvibes/">Seok Moon</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-    <article class="post-card home-template">
-        
-            <a class="post-card-image-link" href="/sdf-gogo">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/cv_01.png)"></div>
-            </a>
-        
-        <div class="post-card-content">
-            <a class="post-card-content-link" href="/sdf-gogo">
-                <header class="post-card-header">
-                    
-                        
-                            
-                                <span class="post-card-tags">Finance</span>
-                            
-                        
-                    
-
-                    <h2 class="post-card-title">moony finance</h2>
-                </header>
-                <section class="post-card-excerpt">
-                    
-                        <p>안녕하세요~~
-</p>
-                    
-                </section>
-            </a>
-            <footer class="post-card-meta">
-                
-                    
-                        
-                        <img class="author-profile-image" src="/assets/built/images/무니아이콘.png" alt="Seok Moon" />
-                        
-                        <span class="post-card-author">
-                            <a href="/author/moonyvibes/">Seok Moon</a>
-                        </span>
-                    
-                
-                <span class="reading-time">
-                    
-                    
-                      1 min read
-                    
-                </span>
-            </footer>
-        </div>
-    </article>
-
-
-        </div>
+        </article>
 
     </div>
 </main>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+
 
 
         <!-- Previous/next page links - displayed on every page -->
@@ -440,7 +312,7 @@ into the {body} of the default.hbs template -->
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->
     <!-- <script>
-        var maxPages = parseInt('1');
+        var maxPages = parseInt('');
     </script>
     <script src="/assets/js/infinitescroll.js"></script> -->
     <!-- /endif -->
@@ -463,6 +335,14 @@ into the {body} of the default.hbs template -->
 
 
     <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+        <script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+
     
 
     <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
