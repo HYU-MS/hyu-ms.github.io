@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://hyu-ms.github.io/tag/finance/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://hyu-ms.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-12-30T23:11:08+09:00</updated>
+  <updated>2022-12-30T23:23:38+09:00</updated>
   <id>https://hyu-ms.github.io/tag/finance/feed.xml</id>
 
   
@@ -33,11 +33,11 @@
   
     <entry>
       <title type="html">moony finance</title>
-      <link href="https://hyu-ms.github.io/sdf-gogo" rel="alternate" type="text/html" title="moony finance" />
+      <link href="https://hyu-ms.github.io/finance-test" rel="alternate" type="text/html" title="moony finance" />
       <published>2022-12-22T19:18:00+09:00</published>
       <updated>2022-12-22T19:18:00+09:00</updated>
-      <id>https://hyu-ms.github.io/sdf-gogo</id>
-      <content type="html" xml:base="https://hyu-ms.github.io/sdf-gogo">&lt;p&gt;Test&lt;/p&gt;
+      <id>https://hyu-ms.github.io/finance-test</id>
+      <content type="html" xml:base="https://hyu-ms.github.io/finance-test">&lt;p&gt;Test&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solutuion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;
@@ -240,11 +240,11 @@ exclude:
   
     <entry>
       <title type="html">Monte Carlo Simulation</title>
-      <link href="https://hyu-ms.github.io/monte-python" rel="alternate" type="text/html" title="Monte Carlo Simulation" />
+      <link href="https://hyu-ms.github.io/finance-monte" rel="alternate" type="text/html" title="Monte Carlo Simulation" />
       <published>2022-12-22T19:18:00+09:00</published>
       <updated>2022-12-22T19:18:00+09:00</updated>
-      <id>https://hyu-ms.github.io/monte-python</id>
-      <content type="html" xml:base="https://hyu-ms.github.io/monte-python">&lt;h1 id=&quot;estimating-pi-with-monte-carlo-simulation&quot;&gt;&lt;strong&gt;Estimating Pi with Monte Carlo Simulation&lt;/strong&gt;&lt;/h1&gt;
+      <id>https://hyu-ms.github.io/finance-monte</id>
+      <content type="html" xml:base="https://hyu-ms.github.io/finance-monte">&lt;h1 id=&quot;estimating-pi-with-monte-carlo-simulation&quot;&gt;&lt;strong&gt;Estimating Pi with Monte Carlo Simulation&lt;/strong&gt;&lt;/h1&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
