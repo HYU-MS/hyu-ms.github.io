@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://hyu-ms.github.io/tag/algorithm/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://hyu-ms.github.io/" rel="alternate" type="text/html" />
-  <updated>2022-12-28T07:26:48+09:00</updated>
+  <updated>2022-12-30T20:08:54+09:00</updated>
   <id>https://hyu-ms.github.io/tag/algorithm/feed.xml</id>
 
   
@@ -32,15 +32,15 @@
 
   
     <entry>
-      <title type="html">알고리즘 (2) - 구현</title>
-      <link href="https://hyu-ms.github.io/algo-implementation" rel="alternate" type="text/html" title="알고리즘 (2) - 구현" />
+      <title type="html">알고리즘 (2) - 그리디</title>
+      <link href="https://hyu-ms.github.io/algo-bruteforce" rel="alternate" type="text/html" title="알고리즘 (2) - 그리디" />
       <published>2022-12-24T09:23:00+09:00</published>
       <updated>2022-12-24T09:23:00+09:00</updated>
-      <id>https://hyu-ms.github.io/algo-implementation</id>
-      <content type="html" xml:base="https://hyu-ms.github.io/algo-implementation">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;알고리즘 목차 &lt;/span&gt;&lt;/p&gt;
+      <id>https://hyu-ms.github.io/algo-bruteforce</id>
+      <content type="html" xml:base="https://hyu-ms.github.io/algo-bruteforce">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;알고리즘 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 그리디&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-implementation&quot;&gt;알고리즘 (2) - 구현&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 브루트 포스&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-brueforce&quot;&gt;알고리즘 (2) - 그리디&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;알고 
@@ -65,7 +65,7 @@
       
 
       
-        <summary type="html">알고리즘 목차 알고리즘 (1) - 그리디 알고리즘 (2) - 구현</summary>
+        <summary type="html">알고리즘 목차 알고리즘 (1) - 브루트 포스 알고리즘 (2) - 그리디</summary>
       
 
       
@@ -73,15 +73,15 @@
     </entry>
   
     <entry>
-      <title type="html">알고리즘 (1) - 그리디</title>
-      <link href="https://hyu-ms.github.io/algo-greedy" rel="alternate" type="text/html" title="알고리즘 (1) - 그리디" />
+      <title type="html">알고리즘 (1) - 브루트 포스</title>
+      <link href="https://hyu-ms.github.io/algo-greedy" rel="alternate" type="text/html" title="알고리즘 (1) - 브루트 포스" />
       <published>2022-12-23T09:23:00+09:00</published>
       <updated>2022-12-23T09:23:00+09:00</updated>
       <id>https://hyu-ms.github.io/algo-greedy</id>
       <content type="html" xml:base="https://hyu-ms.github.io/algo-greedy">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;알고리즘 목차 &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 그리디&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-implementation&quot;&gt;알고리즘 (2) - 구현&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 브루트 포스&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-brueforce&quot;&gt;알고리즘 (2) - 그리디&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;알고 성공! 
 ㄴㅇㄹ&lt;/p&gt;
@@ -110,7 +110,7 @@ SDKLFNndfksdfn&lt;/p&gt;</content>
       
 
       
-        <summary type="html">알고리즘 목차 알고리즘 (1) - 그리디 알고리즘 (2) - 구현 알고 성공! ㄴㅇㄹ</summary>
+        <summary type="html">알고리즘 목차 알고리즘 (1) - 브루트 포스 알고리즘 (2) - 그리디 알고 성공! ㄴㅇㄹ</summary>
       
 
       
