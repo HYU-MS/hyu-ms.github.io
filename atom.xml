@@ -25,7 +25,7 @@
       <item>
         <title>알고리즘 (2) - 그리디</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;알고리즘 목차 &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 브루트 포스&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-brueforce&quot;&gt;알고리즘 (2) - 그리디&lt;/a&gt;&lt;/li&gt;
@@ -44,7 +44,7 @@
       <item>
         <title>알고리즘 (1) - 브루트 포스</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;알고리즘 목차 &lt;/span&gt;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 브루트 포스&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-brueforce&quot;&gt;알고리즘 (2) - 그리디&lt;/a&gt;&lt;/li&gt;
@@ -58,6 +58,21 @@
         <link>
         https://hyu-ms.github.io/algo-greedy</link>
         <guid isPermaLink="true">https://hyu-ms.github.io/algo-greedy</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Monte Carlo Simulation</title>
+        
+          <description>&lt;h1 id=&quot;estimating-pi-with-monte-carlo-simulation&quot;&gt;&lt;strong&gt;Estimating Pi with Monte Carlo Simulation&lt;/strong&gt;&lt;/h1&gt;
+
+</description>
+        
+        <pubDate>Thu, 22 Dec 2022 19:18:00 +0900</pubDate>
+        <link>
+        https://hyu-ms.github.io/monte-python</link>
+        <guid isPermaLink="true">https://hyu-ms.github.io/monte-python</guid>
       </item>
       
     

@@ -50,7 +50,9 @@
     <![endif]-->
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="IT&Finance" />
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<meta name="description" content="IT&Finance" />
     <link rel="shortcut icon" href="https://hyu-ms.github.io/assets/built/images/mvibes_m.png" type="image/png" />
     <link rel="canonical" href="https://hyu-ms.github.io/search" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -198,7 +200,7 @@ into the {body} of the default.hbs template -->
         "title": "알고리즘 (2) - 그리디",
             "author": "moonyvibes",
             "category": "",
-            "content": "알고리즘 목차     알고리즘 (1) - 브루트 포스    알고리즘 (2) - 그리디알고 성공!",
+            "content": "     알고리즘 (1) - 브루트 포스    알고리즘 (2) - 그리디알고 성공!",
         "url": "/algo-bruteforce"
     }
     ,
@@ -207,8 +209,17 @@ into the {body} of the default.hbs template -->
         "title": "알고리즘 (1) - 브루트 포스",
             "author": "moonyvibes",
             "category": "",
-            "content": "알고리즘 목차     알고리즘 (1) - 브루트 포스    알고리즘 (2) - 그리디알고 성공! ㄴㅇㄹ가영ㅇsdf\\nASFDSKDJFLDFJSDKLFNndfksdfn",
+            "content": "     알고리즘 (1) - 브루트 포스    알고리즘 (2) - 그리디알고 성공! ㄴㅇㄹ가영ㅇsdf\\nASFDSKDJFLDFJSDKLFNndfksdfn",
         "url": "/algo-greedy"
+    }
+    ,
+    
+    "monte-python": {
+        "title": "Monte Carlo Simulation",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "Estimating Pi with Monte Carlo Simulationimport numpy as npimport matplotlib.pyplot as pltfrom scipy.stats import normcircle = plt.Circle((0,0), 1, fill=False)fig, ax1 = plt.subplots(figsize=(5,5))ax1.add_artist(circle)The proportion of the area enclosed by the quadrant to the area enclosed by the square is calculated as,\\[\\pi/4 : 1 = \\frac{\\pi}{4}\\]Uniformly scatter a given number of points over the square and count the number of points inside the quadrant. Then, the ratio of the counted number to the number of trials should approximate \\(\\frac{\\pi}{4}\\), if the number of trials is large enough. Multiplying this by 4 will give the estimate of \\(\\pi\\).#np.random.seed(2016033582)N = 100000 #number of pointsx = np.random.uniform(low=0, high=1, size=N) #uniformly distributed x from 0 to 1y = np.random.uniform(low=0, high=1, size=N) #uniformly distributed y from 0 to 1x_in = np.array([])y_in = np.array([])count = 0for i in range(N):  if x[i]**2 + y[i]**2 &lt; 1:    x_in = np.append(x_in, x[i])    y_in = np.append(y_in, y[i])    count += 1pi_estimate = 4 * count / N    fig, ax2 = plt.subplots(figsize=(5,5))ax2.scatter(x,y,s=0.5)ax2.scatter(x_in,y_in,s=0.5,color='r')print(\"The estimate of pi for %d trials is %f.\"%(N,pi_estimate))The estimate of pi for 100000 trials is 3.139680.Estimating Call Option Premium with Monte Carlo SimulationOption Pricing with Monte Carlo SimulationSimulated stock price, \\(S_T\\)\\(\\tilde{S}_T = S_0e^{(r-\\frac{1}{2}\\sigma^2)T+\\sigma\\sqrt{T}\\tilde{Z}}\\), where \\(\\tilde{Z} \\sim N(0,1)\\)np.random.seed(2016033582)N = 100000 #number of runsZ = np.random.normal(0,1,N) #random number from the standard normal distributiondef stockprice(S0, r, sigma, T, Z):   \"\"\"  S0 : initial stock price  r : risk-free rate  sigma : volatility  T : expiration time  Z : random number  \"\"\"  S = S0 * np.exp((r - 1/2 * sigma**2) * T + sigma * np.sqrt(T) * Z)  return SCall option payoff at expiration, \\(\\tilde{C}_T\\)\\[\\tilde{C}_T = \\max(S_T - K, 0)\\]def calloptionpayoff(S, K):  \"\"\"  S : simulated stock price  K : strike price  \"\"\"  C = max(S - K, 0)  return CGiven that the current stock price is \\(\\$50\\) with the stock volatility rate of \\(20\\%\\) and the risk free rate of \\(2\\%\\), the call option payoff for the 6-month call with the exercise of \\(\\$55\\), \\(\\tilde{C}_T\\), for each random variable is computed as,S0 = 50r = 0.02sigma = 0.2T = 0.5simulated_prices = stockprice(S0, r, sigma, T, Z)simulated_payoffs = np.array([])for S in simulated_prices:  payoff = calloptionpayoff(S, K=55)  simulated_payoffs = np.append(simulated_payoffs, payoff)simulated_payoffsarray([0.       , 0.       , 0.       , ..., 6.6015229, 0.       ,       0.       ])The expected payoff of the call option, \\(E[\\tilde{C}_t]\\), is,E = np.mean(simulated_payoffs)E1.244666369330442By discounting the expected payoff of the call option at risk-free rate, the call option value is finally computed as,\\[c = e^{-rT}E[\\tilde{C}_T]\\]c_estimate = np.exp(-0.02 * 0.5) * Ec_estimate1.2322817320287849Comparing with the result from Black Scholes Option Pricing ModelThe formula for a call :\\[c = SN(d_1) - Xe^{-rT}N(d_2)\\]with\\[d_1 = \\frac{\\ln(S/K) + (r + 0.5\\sigma^2)T}{\\sigma\\sqrt{T}}, d_2 = d_1 - \\sigma\\sqrt{T}\\]def d1(S0, K, r, sigma, T):  d1 = (np.log(S0/K) + (r + sigma**2 / 2) * T) / (sigma * np.sqrt(T))  return d1def d2(d1, sigma, T):  d2 = d1 - sigma * np.sqrt(T)  return d2def BlackScholes(d1, d2, S0, K, r, T):  c = S0 * norm.cdf(d1) - K * np.exp(-r*T) * norm.cdf(d2)  return cS0 = 50K = 55r = 0.02sigma = 0.2T = 0.5d1 = d1(S0, K, r, sigma, T)d2 = d2(d1, sigma, T)c = BlackScholes(d1, d2, S0, K, r, T)c1.2364710685682443percent_error = abs(c - c_estimate) / c * 100print(\"percent_error : {}%\".format(percent_error))percent_error : 0.33881395577742046%",
+        "url": "/monte-python"
     }
     ,
     
