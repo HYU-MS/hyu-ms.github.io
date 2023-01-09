@@ -4,6 +4,22 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://hyu-ms.github.io/algo-network.html</loc>
+        
+        <lastmod>2023-01-09T09:21:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://hyu-ms.github.io/algo-targetnum.html</loc>
         
         <lastmod>2023-01-08T09:23:00+09:00</lastmod>
@@ -68,9 +84,9 @@
     </url>
     
     <url>
-        <loc>https://hyu-ms.github.io/finance-test.html</loc>
+        <loc>https://hyu-ms.github.io/algo-2638.html</loc>
         
-        <lastmod>2022-12-22T19:18:00+09:00</lastmod>
+        <lastmod>2022-01-09T09:15:00+09:00</lastmod>
         
 
         

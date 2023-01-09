@@ -8,14 +8,24 @@
     
       
       <item>
+        <title>프로그래머스 - 네트워크</title>
+        
+          <description>&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230110001636685.png&quot; alt=&quot;image-20230110001636685&quot; /&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 09 Jan 2023 09:21:00 +0900</pubDate>
+        <link>
+        https://hyu-ms.github.io/algo-network</link>
+        <guid isPermaLink="true">https://hyu-ms.github.io/algo-network</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>프로그래머스 - 타겟넘버</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-4963&quot;&gt;백준 - 섬의 개수(#4963)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+          <description>&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230109022031773.png&quot; alt=&quot;image-20230109022031773&quot; /&gt;&lt;/p&gt;
 
 </description>
         
@@ -30,12 +40,7 @@
       <item>
         <title>소프티어 - 조립라인</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-4963&quot;&gt;백준 - 섬의 개수(#4963)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+          <description>&lt;p&gt;&lt;a href=&quot;https://softeer.ai/practice/info.do?idx=1&amp;amp;eid=403&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;소프티어 조립라인&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
         
@@ -78,16 +83,16 @@
     
       
       <item>
-        <title>moony finance</title>
+        <title>백준 - 치즈(#2638)</title>
         
-          <description>&lt;p&gt;Test&lt;/p&gt;
+          <description>&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2638&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;백준 2638번&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
         
-        <pubDate>Thu, 22 Dec 2022 19:18:00 +0900</pubDate>
+        <pubDate>Sun, 09 Jan 2022 09:15:00 +0900</pubDate>
         <link>
-        https://hyu-ms.github.io/finance-test</link>
-        <guid isPermaLink="true">https://hyu-ms.github.io/finance-test</guid>
+        https://hyu-ms.github.io/algo-2638</link>
+        <guid isPermaLink="true">https://hyu-ms.github.io/algo-2638</guid>
       </item>
       
     
@@ -95,12 +100,7 @@
       <item>
         <title>백준 - 섬의 개수(#4963)</title>
         
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-4963&quot;&gt;백준 - 섬의 개수(#4963)&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+          <description>&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/4963&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;백준 4963번&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
         
