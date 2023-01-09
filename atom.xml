@@ -8,6 +8,46 @@
     
       
       <item>
+        <title>프로그래머스 - 타겟넘버</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-4963&quot;&gt;백준 - 섬의 개수(#4963)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Jan 2023 09:23:00 +0900</pubDate>
+        <link>
+        https://hyu-ms.github.io/algo-targetnum</link>
+        <guid isPermaLink="true">https://hyu-ms.github.io/algo-targetnum</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>소프티어 - 조립라인</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-4963&quot;&gt;백준 - 섬의 개수(#4963)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sun, 08 Jan 2023 09:23:00 +0900</pubDate>
+        <link>
+        https://hyu-ms.github.io/algo-assembly</link>
+        <guid isPermaLink="true">https://hyu-ms.github.io/algo-assembly</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>성격 검사 결과</title>
         
           <description>&lt;p&gt;#첫 포스팅&lt;/p&gt;
@@ -18,46 +58,6 @@
         <link>
         https://hyu-ms.github.io/life-traits</link>
         <guid isPermaLink="true">https://hyu-ms.github.io/life-traits</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>알고리즘 (2) - 그리디</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 브루트 포스&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-brueforce&quot;&gt;알고리즘 (2) - 그리디&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        
-        <pubDate>Sat, 24 Dec 2022 09:23:00 +0900</pubDate>
-        <link>
-        https://hyu-ms.github.io/algo-bruteforce</link>
-        <guid isPermaLink="true">https://hyu-ms.github.io/algo-bruteforce</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>알고리즘 (1) - 브루트 포스</title>
-        
-          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;table-of-contents-list&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-greedy&quot;&gt;알고리즘 (1) - 브루트 포스&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-brueforce&quot;&gt;알고리즘 (2) - 그리디&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;알고 성공! 
-ㄴㅇㄹ&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Fri, 23 Dec 2022 09:23:00 +0900</pubDate>
-        <link>
-        https://hyu-ms.github.io/algo-greedy</link>
-        <guid isPermaLink="true">https://hyu-ms.github.io/algo-greedy</guid>
       </item>
       
     
@@ -88,6 +88,26 @@
         <link>
         https://hyu-ms.github.io/finance-test</link>
         <guid isPermaLink="true">https://hyu-ms.github.io/finance-test</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>백준 - 섬의 개수(#4963)</title>
+        
+          <description>&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;table-of-contents-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-4963&quot;&gt;백준 - 섬의 개수(#4963)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        
+        <pubDate>Sat, 08 Jan 2022 09:23:00 +0900</pubDate>
+        <link>
+        https://hyu-ms.github.io/algo-4963</link>
+        <guid isPermaLink="true">https://hyu-ms.github.io/algo-4963</guid>
       </item>
       
     

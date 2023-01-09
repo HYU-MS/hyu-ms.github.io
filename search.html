@@ -186,6 +186,24 @@ into the {body} of the default.hbs template -->
 <script>
     window.store = {
     
+    "algo-targetnum": {
+        "title": "프로그래머스 - 타겟넘버",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "     백준 - 섬의 개수(#4963)    소프티어 - 조립라인    프로그래머스 - 타겟넘버from collections import dequedef solution(numbers, target):    answer = 0    queue = deque([[0, 0]])    while queue:        accum, idx = queue.popleft()        if idx == len(numbers):            if accum == target:                answer += 1        else:            num = numbers[idx]            queue.append([accum - num, idx + 1])            queue.append([accum + num, idx + 1])    return answer",
+        "url": "/algo-targetnum"
+    }
+    ,
+    
+    "algo-assembly": {
+        "title": "소프티어 - 조립라인",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "     백준 - 섬의 개수(#4963)    소프티어 - 조립라인    프로그래머스 - 타겟넘버소프티어 조립라인import sysinput = sys.stdin.readlineN = int(input())assembly = [list(map(int, input().split())) for _ in range(N)] d = [[0,0] for _ in range(N)]d[0] = [assembly[0][0], assembly[0][1]]for i in range(1, N):    d[i] = [min(d[i-1][0], d[i-1][1] + assembly[i-1][3]) + assembly[i][0],             min(d[i-1][1], d[i-1][0] + assembly[i-1][2]) + assembly[i][1]]print(min(d[N-1]))",
+        "url": "/algo-assembly"
+    }
+    ,
+    
     "life-traits": {
         "title": "성격 검사 결과",
             "author": "moonyvibes",
@@ -195,29 +213,11 @@ into the {body} of the default.hbs template -->
     }
     ,
     
-    "algo-bruteforce": {
-        "title": "알고리즘 (2) - 그리디",
-            "author": "moonyvibes",
-            "category": "",
-            "content": "     알고리즘 (1) - 브루트 포스    알고리즘 (2) - 그리디알고 성공!",
-        "url": "/algo-bruteforce"
-    }
-    ,
-    
-    "algo-greedy": {
-        "title": "알고리즘 (1) - 브루트 포스",
-            "author": "moonyvibes",
-            "category": "",
-            "content": "     알고리즘 (1) - 브루트 포스    알고리즘 (2) - 그리디알고 성공! ㄴㅇㄹ가영ㅇsdf\\nASFDSKDJFLDFJSDKLFNndfksdfn",
-        "url": "/algo-greedy"
-    }
-    ,
-    
     "finance-monte": {
         "title": "Monte Carlo Simulation",
             "author": "moonyvibes",
             "category": "",
-            "content": "Estimating Pi with Monte Carlo Simulationimport numpy as npimport matplotlib.pyplot as pltfrom scipy.stats import normcircle = plt.Circle((0,0), 1, fill=False)fig, ax1 = plt.subplots(figsize=(5,5))ax1.add_artist(circle)The proportion of the area enclosed by the quadrant to the area enclosed by the square is calculated as,\\[\\pi/4 : 1 = \\frac{\\pi}{4}\\]Uniformly scatter a given number of points over the square and count the number of points inside the quadrant. Then, the ratio of the counted number to the number of trials should approximate \\(\\frac{\\pi}{4}\\), if the number of trials is large enough. Multiplying this by 4 will give the estimate of \\(\\pi\\).#np.random.seed(2016033582)N = 100000 #number of pointsx = np.random.uniform(low=0, high=1, size=N) #uniformly distributed x from 0 to 1y = np.random.uniform(low=0, high=1, size=N) #uniformly distributed y from 0 to 1x_in = np.array([])y_in = np.array([])count = 0for i in range(N):  if x[i]**2 + y[i]**2 &lt; 1:    x_in = np.append(x_in, x[i])    y_in = np.append(y_in, y[i])    count += 1pi_estimate = 4 * count / N    fig, ax2 = plt.subplots(figsize=(5,5))ax2.scatter(x,y,s=0.5)ax2.scatter(x_in,y_in,s=0.5,color='r')print(\"The estimate of pi for %d trials is %f.\"%(N,pi_estimate))The estimate of pi for 100000 trials is 3.139680.Estimating Call Option Premium with Monte Carlo SimulationOption Pricing with Monte Carlo SimulationSimulated stock price, \\(S_T\\)\\(\\tilde{S}_T = S_0e^{(r-\\frac{1}{2}\\sigma^2)T+\\sigma\\sqrt{T}\\tilde{Z}}\\), where \\(\\tilde{Z} \\sim N(0,1)\\)np.random.seed(2016033582)N = 100000 #number of runsZ = np.random.normal(0,1,N) #random number from the standard normal distributiondef stockprice(S0, r, sigma, T, Z):   \"\"\"  S0 : initial stock price  r : risk-free rate  sigma : volatility  T : expiration time  Z : random number  \"\"\"  S = S0 * np.exp((r - 1/2 * sigma**2) * T + sigma * np.sqrt(T) * Z)  return SCall option payoff at expiration, \\(\\tilde{C}_T\\)\\[\\tilde{C}_T = \\max(S_T - K, 0)\\]def calloptionpayoff(S, K):  \"\"\"  S : simulated stock price  K : strike price  \"\"\"  C = max(S - K, 0)  return CGiven that the current stock price is \\(\\$50\\) with the stock volatility rate of \\(20\\%\\) and the risk free rate of \\(2\\%\\), the call option payoff for the 6-month call with the exercise of \\(\\$55\\), \\(\\tilde{C}_T\\), for each random variable is computed as,S0 = 50r = 0.02sigma = 0.2T = 0.5simulated_prices = stockprice(S0, r, sigma, T, Z)simulated_payoffs = np.array([])for S in simulated_prices:  payoff = calloptionpayoff(S, K=55)  simulated_payoffs = np.append(simulated_payoffs, payoff)simulated_payoffsarray([0.       , 0.       , 0.       , ..., 6.6015229, 0.       ,       0.       ])The expected payoff of the call option, \\(E[\\tilde{C}_t]\\), is,E = np.mean(simulated_payoffs)E1.244666369330442By discounting the expected payoff of the call option at risk-free rate, the call option value is finally computed as,\\[c = e^{-rT}E[\\tilde{C}_T]\\]c_estimate = np.exp(-0.02 * 0.5) * Ec_estimate1.2322817320287849Comparing with the result from Black Scholes Option Pricing ModelThe formula for a call :\\[c = SN(d_1) - Xe^{-rT}N(d_2)\\]with\\[d_1 = \\frac{\\ln(S/K) + (r + 0.5\\sigma^2)T}{\\sigma\\sqrt{T}}, d_2 = d_1 - \\sigma\\sqrt{T}\\]def d1(S0, K, r, sigma, T):  d1 = (np.log(S0/K) + (r + sigma**2 / 2) * T) / (sigma * np.sqrt(T))  return d1def d2(d1, sigma, T):  d2 = d1 - sigma * np.sqrt(T)  return d2def BlackScholes(d1, d2, S0, K, r, T):  c = S0 * norm.cdf(d1) - K * np.exp(-r*T) * norm.cdf(d2)  return cS0 = 50K = 55r = 0.02sigma = 0.2T = 0.5d1 = d1(S0, K, r, sigma, T)d2 = d2(d1, sigma, T)c = BlackScholes(d1, d2, S0, K, r, T)c1.2364710685682443percent_error = abs(c - c_estimate) / c * 100print(\"percent_error : {}%\".format(percent_error))percent_error : 0.33881395577742046%",
+            "content": "Estimating Pi with Monte Carlo Simulationimport numpy as npimport matplotlib.pyplot as pltfrom scipy.stats import normcircle = plt.Circle((0,0), 1, fill=False)fig, ax1 = plt.subplots(figsize=(5,5))ax1.add_artist(circle)The proportion of the area enclosed by the quadrant to the area enclosed by the square is calculated as,\\[\\pi/4 : 1 = \\frac{\\pi}{4}\\]Uniformly scatter a given number of points over the square and count the number of points inside the quadrant. Then, the ratio of the counted number to the number of trials should approximate \\(\\frac{\\pi}{4}\\), if the number of trials is large enough. Multiplying this by 4 will give the estimate of \\(\\pi\\).#np.random.seed(2016033582)N = 100000 #number of pointsx = np.random.uniform(low=0, high=1, size=N) #uniformly distributed x from 0 to 1y = np.random.uniform(low=0, high=1, size=N) #uniformly distributed y from 0 to 1x_in = np.array([])y_in = np.array([])count = 0for i in range(N):  if x[i]**2 + y[i]**2 &lt; 1:    x_in = np.append(x_in, x[i])    y_in = np.append(y_in, y[i])    count += 1pi_estimate = 4 * count / N    fig, ax2 = plt.subplots(figsize=(5,5))ax2.scatter(x,y,s=0.5)ax2.scatter(x_in,y_in,s=0.5,color='r')print(\"The estimate of pi for %d trials is %f.\"%(N,pi_estimate))The estimate of pi for 100000 trials is 3.139680.Estimating Call Option Premium with Monte Carlo SimulationOption Pricing with Monte Carlo SimulationSimulated stock price, \\(S_T\\)\\(\\tilde{S}_T = S_0e^{(r-\\frac{1}{2}\\sigma^2)T+\\sigma\\sqrt{T}\\tilde{Z}}\\), where \\(\\tilde{Z} \\sim N(0,1)\\)np.random.seed(2016033582)N = 100000 #number of runsZ = np.random.normal(0,1,N) #random number from the standard normal distributiondef stockprice(S0, r, sigma, T, Z):   \"\"\"  S0 : initial stock price  r : risk-free rate  sigma : volatility  T : expiration time  Z : random number  \"\"\"  S = S0 * np.exp((r - 1/2 * sigma**2) * T + sigma * np.sqrt(T) * Z)  return SCall option payoff at expiration, \\(\\tilde{C}_T\\)\\[\\tilde{C}_T = \\max(S_T - K, 0)\\]def calloptionpayoff(S, K):  \"\"\"  S : simulated stock price  K : strike price  \"\"\"  C = max(S - K, 0)  return CGiven that the current stock price is \\(\\$50\\) with the stock volatility rate of \\(20\\%\\) and the risk free rate of \\(2\\%\\), the call option payoff for the 6-month call with the exercise of \\(\\$55\\), \\(\\tilde{C}_T\\), for each random variable is computed as,S0 = 50r = 0.02sigma = 0.2T = 0.5simulated_prices = stockprice(S0, r, sigma, T, Z)simulated_payoffs = np.array([])for S in simulated_prices:  payoff = calloptionpayoff(S, K=55)  simulated_payoffs = np.append(simulated_payoffs, payoff)simulated_payoffsarray([0., 0., 0., ..., 6.6015229, 0., 0.])The expected payoff of the call option, \\(E[\\tilde{C}_t]\\), is,E = np.mean(simulated_payoffs)E1.244666369330442By discounting the expected payoff of the call option at risk-free rate, the call option value is finally computed as,\\[c = e^{-rT}E[\\tilde{C}_T]\\]c_estimate = np.exp(-0.02 * 0.5) * Ec_estimate1.2322817320287849Comparing with the result from Black Scholes Option Pricing ModelThe formula for a call :\\[c = SN(d_1) - Xe^{-rT}N(d_2)\\]with\\[d_1 = \\frac{\\ln(S/K) + (r + 0.5\\sigma^2)T}{\\sigma\\sqrt{T}}, d_2 = d_1 - \\sigma\\sqrt{T}\\]def d1(S0, K, r, sigma, T):  d1 = (np.log(S0/K) + (r + sigma**2 / 2) * T) / (sigma * np.sqrt(T))  return d1def d2(d1, sigma, T):  d2 = d1 - sigma * np.sqrt(T)  return d2def BlackScholes(d1, d2, S0, K, r, T):  c = S0 * norm.cdf(d1) - K * np.exp(-r*T) * norm.cdf(d2)  return cS0 = 50K = 55r = 0.02sigma = 0.2T = 0.5d1 = d1(S0, K, r, sigma, T)d2 = d2(d1, sigma, T)c = BlackScholes(d1, d2, S0, K, r, T)c1.2364710685682443percent_error = abs(c - c_estimate) / c * 100print(\"percent_error : {}%\".format(percent_error))percent_error : 0.33881395577742046%",
         "url": "/finance-monte"
     }
     ,
@@ -228,6 +228,15 @@ into the {body} of the default.hbs template -->
             "category": "",
             "content": "Testdef solutuion(d,f,g):    return d,f,gprint('hello')# Jekyll configurationmarkdown: kramdown# kramdown : markdown의 개조판.# markdown에서 불편한 사항을 개선한 형태.# MyDataowner:  name:           Seok Moon  avatar:         photo.jpg  bio:            &quot;B.S. in Automotive Engineering&quot;  email:          tjrdl67@naver.com  # Social networking links used in footer. Update and remove as you like.  twitter:  facebook:  github:  stackexchange:  linkedin:  instagram: seokiyummy  flickr:  tumblr:  # google plus id, include the &#39;+&#39;, eg +mmistakes  google_plus:highlighter: rouge# text highlighter로 rouge이용# 2016.02월 이후로 syntax highlighter는 rouge만 지원.# Pygments 사용불가.paginate: 10# 작성한 모든 post를 하나의 페이지에 열거할 수 없으니# pagination이 필요하고 몇개의 post를 하나의 page에서# 보여줄 건지를 설정.language: &#39;en-uk&#39;# 언어 설정url: https://hyu-ms.github.io# Google Search Console에서 사용하는 sitemap.xml 생성시# 이 url key값이 존재하지 않으면 sitemap.xml이# 정상적으로 생성되지 않는다.# 또한 disqus(댓글시스템)를 이용하기 위해서도 필요.# 자신의 github page url을 입력# ( https://your_github_id.github.io 형식 )baseurl: /# Website infotitle: Moony Vibes# 자신의 blog title.description: IT&amp;Finance# blog home에 표시될 blog에 대한 전반적인 설명.cover: assets/built/images/moony_cities.png# blog home에 표시될 blog cover image.logo: logo_dark:favicon: assets/built/images/mvibes_m.png# favicon으로 사용할 imageproduction_url: https://hyu-ms.github.io/# 최종적으로 blog가 운영될 urlsource_url: https://github.com/hyu-ms/GitHubPageMaker/# blogmaker(jekyll source folder)에 대한 github repository# Social infonavigation: True# Navigation bar link를 보여줄건지 여부subscribers: True# subscriber 기능을 사용할건지의 여부# 저는 약간의 수정을 통해 subscriber 기능대신# lunr.js를 이용한 검색 기능으로 대체 사용했습니다.# 검색기능으로 대체하기 위해서# `_includes/subscribe-form.html` 파일의 수정이 필요합니다.twitter:facebook:# 만약 twitter와 facebook을 이용하면 username을 입력# Disqusdisqus: Truedisqus_shortname: xxxxxxxx# disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해# disqus를 이용할 것인지 여부와 만약 사용하면# disqus shortname을 입력 ( disqus username이 아님 )# Google Analyticsgoogle_analytics: UA-xxxxxxxx-x # replace with your GA tracking identifier# Google Analytics을 사용할 경우 GA tracking identifier를 입력# Permalinkspermalink: /:title# permalink: /author/:author# permalink: /tag/:title# 각각의 post에 고정주소를 어떤 방식으로 할당할 것인지를 결정# 이 값을 바꾸면 작성한 포스트의 저장위치나 파일이름이 변경된다.# gems and other configsplugins: [jekyll-paginate, jekyll-feed, jekyll-gist]feed:  path: feed.xml# Travis-CI 설정입니다.safe: Falselsi: Falseusername: moonyvibesrepo: # username : travis-ci와 연동하는 github의 username# repo: travis-ci와 연동하는 github의 repository이름# https://github.com/&lt;username&gt;/&lt;repository&gt;branch: master# 사용할 branch명relative_source:destination: ../hyu-ms.github.io/# compile된 결과가 생성되는 폴더# 이 폴더안의 내용이 우리가 운영하는 블로그 내용이 컴파일되서 들어간다.# 이 폴더안의 내용을 github repository(https://username.github.io)에 push# 만약 Travis-CI를 이용할 예정이면 이 부분을 git submodule로# github repository(https://username.github.io)에 연결해야 한다.# exclude는 Jekyll컴파일 시 destination에 포함될 필요가# 없는것들을 명시한다. (node_modules와 필요없는 것들은 제외)# exclude:#   - README.md#   - Rakefile#   - Gemfile#   - Gemfile.lock#   - changelog.md#   - &quot;*.Rmd&quot;#   - vendor#   - .travis.yml#   - node_modules#   # - assets/css# #  - assets/images# #  - _posts/python# #  - _posts/jekyllexclude:  - assets/css  - node_modules  - vendor  - .travis.yml  - Gemfile  - Gemfile.lock  - GHOST.txt  - gulpfile.js  - LICENSE  - package.json  - package-lock.json  - Rakefile  - README.md  - script.py  - changelog.md  - &quot;*.Rmd&quot;  - .git*",
         "url": "/finance-test"
+    }
+    ,
+    
+    "algo-4963": {
+        "title": "백준 - 섬의 개수(#4963)",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "     백준 - 섬의 개수(#4963)    소프티어 - 조립라인    프로그래머스 - 타겟넘버백준 4963번import syssys.setrecursionlimit(10000)input = sys.stdin.readlinedx = [1,-1,0,0,1,-1,1,-1]dy = [0,0,1,-1,1,-1,-1,1]def dfs(i,j):    for k in range(8):        nx = i + dx[k]        ny = j + dy[k]        if nx&lt;0 or ny&lt;0 or nx&gt;N-1 or ny&gt;M-1:            continue        if maps[nx][ny]==0:            continue        maps[nx][ny]=0        dfs(nx,ny)    returnanswer = []while True:    M,N = map(int,input().split())    if N==0 and M==0:        break    maps = [list(map(int,input().split())) for _ in range(N)]    count = 0    for i in range(N):        for j in range(M):            if maps[i][j]==1:                maps[i][j]=0                dfs(i,j)                count+=1    answer.append(count)for i in answer:    print(i)",
+        "url": "/algo-4963"
     }
     
     
@@ -260,7 +269,7 @@ $(function() {
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="https://hyu-ms.github.io/">Moony Vibes</a> &copy; 2022</section>
+                <section class="copyright"><a href="https://hyu-ms.github.io/">Moony Vibes</a> &copy; 2023</section>
                 <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
                     <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
                     <a href="https://github.com/jekyllt/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
