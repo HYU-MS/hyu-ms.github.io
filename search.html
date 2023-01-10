@@ -190,8 +190,17 @@ into the {body} of the default.hbs template -->
         "title": "프로그래머스 - 네트워크",
             "author": "moonyvibes",
             "category": "",
-            "content": "from collections import dequedef bfs(v,nodes,visited,computers):     queue = deque([[v,nodes]])    while queue:        node = queue.popleft()        visited[node[0]] = True        for i in range(len(node[1])):            if node[1][i]==1 and visited[i]==False:                visited[i] = True                queue.append([i,computers[i]])def solution(n, computers):    answer = 0    visited = [False]*n    for i in range(n):        if not visited[i]:            current_sum = sum(visited)            bfs(i,computers[i],visited,computers)            if sum(visited)!=current_sum:                answer+=1                return answer     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
+            "content": "from collections import dequedef bfs(v,nodes,visited,computers):     queue = deque([[v,nodes]])    while queue:        node = queue.popleft()        visited[node[0]] = True        for i in range(len(node[1])):            if node[1][i]==1 and visited[i]==False:                visited[i] = True                queue.append([i,computers[i]])def solution(n, computers):    answer = 0    visited = [False]*n    for i in range(n):        if not visited[i]:            current_sum = sum(visited)            bfs(i,computers[i],visited,computers)            if sum(visited)!=current_sum:                answer+=1                return answer     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
         "url": "/algo-network"
+    }
+    ,
+    
+    "algo-jumpjump": {
+        "title": "백준 - 점프 점프(#11060)",
+            "author": "moonyvibes",
+            "category": "",
+            "content": "백준 11060#BFS을 이용한 풀이법from collections import dequeimport sysinput = sys.stdin.readlinen = int(input())jump = list(map(int, input().split()))visited = [False]*ndef bfs(i, j):    visited[0] = True       queue = deque([[i, j]])    while queue:        pos, cnt = queue.popleft()        if pos == n - 1:            return cnt        for i in range(1, jump[pos] + 1):            if pos + i &lt; n and visited[pos + i] == False:                visited[pos + i] = True                queue.append([pos + i, cnt + 1])    return -1print(bfs(0, 0))#Dynamic Programming을 이용한 풀이법import sysinput = sys.stdin.readlineN = int(input())jump = list(map(int,input().split()))d = [N]*Nd[0] = 0for i in range(N):    for j in range(i,jump[i]+1):        d[i+j] = min(d[i+j],d[i]+1)print(d[N-1] if d[N]-1!=N else -1)     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
+        "url": "/algo-jumpjump"
     }
     ,
     
@@ -199,7 +208,7 @@ into the {body} of the default.hbs template -->
         "title": "프로그래머스 - 타겟넘버",
             "author": "moonyvibes",
             "category": "",
-            "content": "from collections import dequedef solution(numbers, target):    answer = 0    queue = deque([[0, 0]])    while queue:        accum, idx = queue.popleft()        if idx == len(numbers):            if accum == target:                answer += 1        else:            num = numbers[idx]            queue.append([accum - num, idx + 1])            queue.append([accum + num, idx + 1])    return answer     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
+            "content": "from collections import dequedef solution(numbers, target):    answer = 0    queue = deque([[0, 0]])    while queue:        accum, idx = queue.popleft()        if idx == len(numbers):            if accum == target:                answer += 1        else:            num = numbers[idx]            queue.append([accum - num, idx + 1])            queue.append([accum + num, idx + 1])    return answer     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
         "url": "/algo-targetnum"
     }
     ,
@@ -208,7 +217,7 @@ into the {body} of the default.hbs template -->
         "title": "소프티어 - 조립라인",
             "author": "moonyvibes",
             "category": "",
-            "content": "소프티어 조립라인import sysinput = sys.stdin.readlineN = int(input())assembly = [list(map(int, input().split())) for _ in range(N)] d = [[0,0] for _ in range(N)]d[0] = [assembly[0][0], assembly[0][1]]for i in range(1, N):    d[i] = [min(d[i-1][0], d[i-1][1] + assembly[i-1][3]) + assembly[i][0],             min(d[i-1][1], d[i-1][0] + assembly[i-1][2]) + assembly[i][1]]print(min(d[N-1]))     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
+            "content": "소프티어 조립라인import sysinput = sys.stdin.readlineN = int(input())assembly = [list(map(int, input().split())) for _ in range(N)] d = [[0,0] for _ in range(N)]d[0] = [assembly[0][0], assembly[0][1]]for i in range(1, N):    d[i] = [min(d[i-1][0], d[i-1][1] + assembly[i-1][3]) + assembly[i][0],             min(d[i-1][1], d[i-1][0] + assembly[i-1][2]) + assembly[i][1]]print(min(d[N-1]))     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
         "url": "/algo-assembly"
     }
     ,
@@ -235,7 +244,7 @@ into the {body} of the default.hbs template -->
         "title": "백준 - 치즈(#2638)",
             "author": "moonyvibes",
             "category": "",
-            "content": "백준 2638번from collections import dequeimport sysinput = sys.stdin.readlineN,M = map(int,input().split())maps = [list(map(int,input().split())) for _ in range(N)]dx = [1,-1,0,0]dy = [0,0,1,-1]def bsf(i,j):    queue = deque([[i,j]])    while queue:        x,y = queue.popleft()        visited[x][y] = 1        for i in range(4):            nx = x + dx[i]            ny = y + dy[i]            if nx&lt;0 or ny&lt;0 or nx&gt;N-1 or ny&gt;M-1:                continue            if maps[nx][ny]==1:                visited[nx][ny] +=1            elif visited[nx][ny] ==0:                visited[nx][ny] = 1                queue.append([nx,ny])sec = 0while True:    if maps.count([0]*M)==N:        break    visited = [[0] * M for _ in range(N)]  # 방문 초기화    bsf(0, 0)  # (0,0)에서 시작    for i in range(N):        for j in range(M):            if visited[i][j] &gt; 1:                maps[i][j] = 0    sec += 1print(sec)     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
+            "content": "백준 2638번from collections import dequeimport sysinput = sys.stdin.readlineN,M = map(int,input().split())maps = [list(map(int,input().split())) for _ in range(N)]dx = [1,-1,0,0]dy = [0,0,1,-1]def bsf(i,j):    queue = deque([[i,j]])    while queue:        x,y = queue.popleft()        visited[x][y] = 1        for i in range(4):            nx = x + dx[i]            ny = y + dy[i]            if nx&lt;0 or ny&lt;0 or nx&gt;N-1 or ny&gt;M-1:                continue            if maps[nx][ny]==1:                visited[nx][ny] +=1            elif visited[nx][ny] ==0:                visited[nx][ny] = 1                queue.append([nx,ny])sec = 0while True:    if maps.count([0]*M)==N:        break    visited = [[0] * M for _ in range(N)]  # 방문 초기화    bsf(0, 0)  # (0,0)에서 시작    for i in range(N):        for j in range(M):            if visited[i][j] &gt; 1:                maps[i][j] = 0    sec += 1print(sec)     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
         "url": "/algo-2638"
     }
     ,
@@ -244,7 +253,7 @@ into the {body} of the default.hbs template -->
         "title": "백준 - 섬의 개수(#4963)",
             "author": "moonyvibes",
             "category": "",
-            "content": "백준 4963번import syssys.setrecursionlimit(10000)input = sys.stdin.readlinedx = [1,-1,0,0,1,-1,1,-1]dy = [0,0,1,-1,1,-1,-1,1]def dfs(i,j):    for k in range(8):        nx = i + dx[k]        ny = j + dy[k]        if nx&lt;0 or ny&lt;0 or nx&gt;N-1 or ny&gt;M-1:            continue        if maps[nx][ny]==0:            continue        maps[nx][ny]=0        dfs(nx,ny)    returnanswer = []while True:    M,N = map(int,input().split())    if N==0 and M==0:        break    maps = [list(map(int,input().split())) for _ in range(N)]    count = 0    for i in range(N):        for j in range(M):            if maps[i][j]==1:                maps[i][j]=0                dfs(i,j)                count+=1    answer.append(count)for i in answer:    print(i)     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
+            "content": "백준 4963번import syssys.setrecursionlimit(10000)input = sys.stdin.readlinedx = [1,-1,0,0,1,-1,1,-1]dy = [0,0,1,-1,1,-1,-1,1]def dfs(i,j):    for k in range(8):        nx = i + dx[k]        ny = j + dy[k]        if nx&lt;0 or ny&lt;0 or nx&gt;N-1 or ny&gt;M-1:            continue        if maps[nx][ny]==0:            continue        maps[nx][ny]=0        dfs(nx,ny)    returnanswer = []while True:    M,N = map(int,input().split())    if N==0 and M==0:        break    maps = [list(map(int,input().split())) for _ in range(N)]    count = 0    for i in range(N):        for j in range(M):            if maps[i][j]==1:                maps[i][j]=0                dfs(i,j)                count+=1    answer.append(count)for i in answer:    print(i)     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크",
         "url": "/algo-4963"
     }
     
