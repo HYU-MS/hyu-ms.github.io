@@ -4,6 +4,102 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://hyu-ms.github.io/algo-2805.html</loc>
+        
+        <lastmod>2023-01-18T09:21:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-triproute.html</loc>
+        
+        <lastmod>2023-01-18T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-removepairs.html</loc>
+        
+        <lastmod>2023-01-18T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-parkingfee.html</loc>
+        
+        <lastmod>2023-01-18T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-parenthesis.html</loc>
+        
+        <lastmod>2023-01-18T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-lifeboat.html</loc>
+        
+        <lastmod>2023-01-18T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://hyu-ms.github.io/algo-network.html</loc>
         
         <lastmod>2023-01-09T09:21:00+09:00</lastmod>
@@ -20,7 +116,7 @@
     </url>
     
     <url>
-        <loc>https://hyu-ms.github.io/algo-jumpjump.html</loc>
+        <loc>https://hyu-ms.github.io/algo-11060.html</loc>
         
         <lastmod>2023-01-09T09:21:00+09:00</lastmod>
         

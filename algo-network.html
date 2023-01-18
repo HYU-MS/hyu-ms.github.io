@@ -60,7 +60,7 @@
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="프로그래머스 - 네트워크" />
-    <meta property="og:description" content="from collections import deque def bfs(v,nodes,visited,computers): queue = deque([[v,nodes]]) while queue: node = queue.popleft() visited[node[0]] = True for i in range(len(node[1])): if node[1][i]==1 and visited[i]==False: visited[i] = True queue.append([i,computers[i]]) def solution(n, computers): answer = 0 visited = [False]*n for i in range(n): if not visited[i]: current_sum = sum(visited) bfs(i,computers[i],visited,computers) if" />
+    <meta property="og:description" content="#DFS를 이용한 풀이 def dfs(v,visited,graph): for i in graph[v]: if not visited[i]: visited[i]=True dfs(i,visited,graph) def solution(n, computers): answer = 0 graph = [[] for _ in range(n)] visited = [False] * n for i in range(n): for j in range(len(computers[i])): if computers[i][j]!=0 and i!=j: graph[i].append(computers[i][j]*j) present=sum(visited) for i in range(n):" />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-network" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/images/image-20230110001636685.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -70,7 +70,7 @@
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="프로그래머스 - 네트워크" />
-    <meta name="twitter:description" content="from collections import deque def bfs(v,nodes,visited,computers): queue = deque([[v,nodes]]) while queue: node = queue.popleft() visited[node[0]] = True for i in range(len(node[1])): if node[1][i]==1 and visited[i]==False: visited[i] = True queue.append([i,computers[i]]) def solution(n, computers): answer = 0 visited = [False]*n for i in range(n): if not visited[i]: current_sum = sum(visited) bfs(i,computers[i],visited,computers) if" />
+    <meta name="twitter:description" content="#DFS를 이용한 풀이 def dfs(v,visited,graph): for i in graph[v]: if not visited[i]: visited[i]=True dfs(i,visited,graph) def solution(n, computers): answer = 0 graph = [[] for _ in range(n)] visited = [False] * n for i in range(n): for j in range(len(computers[i])): if computers[i][j]!=0 and i!=j: graph[i].append(computers[i][j]*j) present=sum(visited) for i in range(n):" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/images/image-20230110001636685.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -102,7 +102,7 @@
         "@type": "WebPage",
         "@id": "https://hyu-ms.github.io/algo-network"
     },
-    "description": "from collections import deque def bfs(v,nodes,visited,computers): queue = deque([[v,nodes]]) while queue: node = queue.popleft() visited[node[0]] = True for i in range(len(node[1])): if node[1][i]==1 and visited[i]==False: visited[i] = True queue.append([i,computers[i]]) def solution(n, computers): answer = 0 visited = [False]*n for i in range(n): if not visited[i]: current_sum = sum(visited) bfs(i,computers[i],visited,computers) if"
+    "description": "#DFS를 이용한 풀이 def dfs(v,visited,graph): for i in graph[v]: if not visited[i]: visited[i]=True dfs(i,visited,graph) def solution(n, computers): answer = 0 graph = [[] for _ in range(n)] visited = [False] * n for i in range(n): for j in range(len(computers[i])): if computers[i][j]!=0 and i!=j: graph[i].append(computers[i][j]*j) present=sum(visited) for i in range(n):"
 }
     </script>
 
@@ -198,7 +198,35 @@ into the {body} of the default.hbs template -->
                 <div class="kg-card-markdown">
                     <p><img src="../../assets/images/image-20230110001636685.png" alt="image-20230110001636685" /></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#DFS를 이용한 풀이
+</span><span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="n">graph</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">graph</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+            <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="bp">True</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="n">graph</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">computers</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">graph</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+    <span class="n">visited</span> <span class="o">=</span> <span class="p">[</span><span class="bp">False</span><span class="p">]</span> <span class="o">*</span> <span class="n">n</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">computers</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>
+            <span class="k">if</span> <span class="n">computers</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span><span class="o">!=</span><span class="n">j</span><span class="p">:</span>
+                <span class="n">graph</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">computers</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">j</span><span class="p">)</span>
+    
+    <span class="n">present</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">visited</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="bp">True</span>
+        <span class="n">dfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="n">graph</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">present</span><span class="o">!=</span><span class="nb">sum</span><span class="p">(</span><span class="n">visited</span><span class="p">):</span>
+            <span class="n">present</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">visited</span><span class="p">)</span>
+            <span class="n">answer</span><span class="o">+=</span><span class="mi">1</span>
+            
+    <span class="k">return</span> <span class="n">answer</span>
+
+<span class="c1">#BFS를 이용한 풀이
+</span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 
 <span class="k">def</span> <span class="nf">bfs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">nodes</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="n">computers</span><span class="p">):</span> 
     <span class="n">queue</span> <span class="o">=</span> <span class="n">deque</span><span class="p">([[</span><span class="n">v</span><span class="p">,</span><span class="n">nodes</span><span class="p">]])</span>
@@ -233,10 +261,16 @@ into the {body} of the default.hbs template -->
 <ul class="table-of-contents-list">
     <li><a href="./algo-4963">백준 - 섬의 개수(#4963)</a></li>
     <li><a href="./algo-2638">백준 - 치즈(#2638)</a></li>
-    <li><a href="./algo-jumpjump">백준 - 점프 점프</a></li>
+    <li><a href="./algo-11060">백준 - 점프 점프</a></li>
+    <li><a href="./algo-2805">백준 - 나무 자르기</a></li>
     <li><a href="./algo-assembly">소프티어 - 조립라인</a></li>
     <li><a href="./algo-targetnum">프로그래머스 - 타겟넘버</a></li>
     <li><a href="./algo-network">프로그래머스 - 네트워크</a></li>
+    <li><a href="./algo-parenthesis">프로그래머스 - 올바른 괄호</a></li>
+    <li><a href="./algo-triproute">프로그래머스 - 여행 경로</a></li>
+    <li><a href="./algo-lifeboat">프로그래머스 - 구명보트</a></li>
+    <li><a href="./algo-parkingfee">프로그래머스 - 주차 요금 계산</a></li>
+    <li><a href="./algo-removepairs">프로그래머스 - 짝지어 제거하기</a></li>
 </ul>
 
                 </div>
@@ -348,13 +382,9 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
-                                  
-                                
-                                  
-                                    
                                         
                                         
-                                            <li><a href="/algo-jumpjump">백준 - 점프 점프(#11060)</a></li>
+                                            <li><a href="/algo-2805">백준 - 나무 자르기(#2805)</a></li>
                                         
                                     
                                   
@@ -363,7 +393,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-targetnum">프로그래머스 - 타겟넘버</a></li>
+                                            <li><a href="/algo-triproute">프로그래머스 - 여행경로</a></li>
                                         
                                     
                                   
@@ -372,7 +402,53 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-assembly">소프티어 - 조립라인</a></li>
+                                            <li><a href="/algo-removepairs">프로그래머스 - 짝지어 제거하기</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
                                         
                                     
                                   
@@ -400,7 +476,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/algorithm/">
                                 
-                                    See all 5 posts  →
+                                    See all 11 posts  →
                                 
                             </a>
                         </footer>
@@ -415,6 +491,57 @@ into the {body} of the default.hbs template -->
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/algo-lifeboat">
+                <div class="post-card-image" style="background-image: url(/assets/images/image-20230118203002663.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/algo-lifeboat">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Algorithm</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">프로그래머스 - 구명보트</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/mvibes_m.png" alt="Seok Moon" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/moonyvibes/">Seok Moon</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -422,12 +549,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/algo-jumpjump">
+            <a class="post-card-image-link" href="/algo-11060">
                 <div class="post-card-image" style="background-image: url(/assets/images/image-20230110191442904.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/algo-jumpjump">
+            <a class="post-card-content-link" href="/algo-11060">
                 <header class="post-card-header">
                     
                         
