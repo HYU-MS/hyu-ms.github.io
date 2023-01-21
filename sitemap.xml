@@ -4,6 +4,86 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://hyu-ms.github.io/algo-jumpfar.html</loc>
+        
+        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-wordchange.html</loc>
+        
+        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-spicier.html</loc>
+        
+        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-develop.html</loc>
+        
+        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-2667.html</loc>
+        
+        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://hyu-ms.github.io/algo-2805.html</loc>
         
         <lastmod>2023-01-18T09:21:00+09:00</lastmod>
