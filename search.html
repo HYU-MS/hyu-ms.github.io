@@ -190,7 +190,7 @@ into the {body} of the default.hbs template -->
         "title": "프로그래머스 - 전화번호 목록",
             "author": "moonyvibes",
             "category": "",
-            "content": "from heapq import heappop, heapifydef solution(phone_book):    if len(phone_book)==1:        return True        heapify(phone_book)    prefix = heappop(phone_book)    while phone_book:        if phone_book[0].startswith(prefix):            return False        prefix = heappop(phone_book)     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프(#11060)    백준 - 나무 자르기(#2805)    백준 - 회의실 배정(#1931)    백준 - 단지번호붙이기(#2667)    백준 - 미로 탐색(#2178)    백준 - 가장 긴 수열(#11053)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크    프로그래머스 - 단속카메라    프로그래머스 - 올바른 괄호    프로그래머스 - 여행 경로    프로그래머스 - 구명보트    프로그래머스 - 주차 요금 계산    프로그래머스 - 짝지어 제거하기    프로그래머스 - 예상 대진표    프로그래머스 - 멀리 뛰기    프로그래머스 - 단어 변환    프로그래머스 - 더 맵게    프로그래머스 - 기능 개발    프로그래머스 - 전화번호 목록",
+            "content": "from collections import dequedef solution(phone_book):    if len(phone_book)==1:        return True    phone_book.sort()    queue = deque(phone_book)    prefix = queue.popleft()    while queue:        if queue[0].startswith(prefix):            return False        prefix = queue.popleft()    return True     백준 - 섬의 개수(#4963)    백준 - 치즈(#2638)    백준 - 점프 점프(#11060)    백준 - 나무 자르기(#2805)    백준 - 회의실 배정(#1931)    백준 - 단지번호붙이기(#2667)    백준 - 미로 탐색(#2178)    백준 - 가장 긴 수열(#11053)    소프티어 - 조립라인    프로그래머스 - 타겟넘버    프로그래머스 - 네트워크    프로그래머스 - 단속카메라    프로그래머스 - 올바른 괄호    프로그래머스 - 여행 경로    프로그래머스 - 구명보트    프로그래머스 - 주차 요금 계산    프로그래머스 - 짝지어 제거하기    프로그래머스 - 예상 대진표    프로그래머스 - 멀리 뛰기    프로그래머스 - 단어 변환    프로그래머스 - 더 맵게    프로그래머스 - 기능 개발    프로그래머스 - 전화번호 목록",
         "url": "/algo-phonenumber"
     }
     ,

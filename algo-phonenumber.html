@@ -60,7 +60,7 @@
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="프로그래머스 - 전화번호 목록" />
-    <meta property="og:description" content="from heapq import heappop, heapify def solution(phone_book): if len(phone_book)==1: return True heapify(phone_book) prefix = heappop(phone_book) while phone_book: if phone_book[0].startswith(prefix): return False prefix = heappop(phone_book) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 - 회의실 배정(#1931) 백준 - 단지번호붙이기(#2667) 백준 - 미로 탐색(#2178)" />
+    <meta property="og:description" content="from collections import deque def solution(phone_book): if len(phone_book)==1: return True phone_book.sort() queue = deque(phone_book) prefix = queue.popleft() while queue: if queue[0].startswith(prefix): return False prefix = queue.popleft() return True 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 - 회의실 배정(#1931) 백준 - 단지번호붙이기(#2667)" />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-phonenumber" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/images/image-20230124164523139.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -70,7 +70,7 @@
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="프로그래머스 - 전화번호 목록" />
-    <meta name="twitter:description" content="from heapq import heappop, heapify def solution(phone_book): if len(phone_book)==1: return True heapify(phone_book) prefix = heappop(phone_book) while phone_book: if phone_book[0].startswith(prefix): return False prefix = heappop(phone_book) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 - 회의실 배정(#1931) 백준 - 단지번호붙이기(#2667) 백준 - 미로 탐색(#2178)" />
+    <meta name="twitter:description" content="from collections import deque def solution(phone_book): if len(phone_book)==1: return True phone_book.sort() queue = deque(phone_book) prefix = queue.popleft() while queue: if queue[0].startswith(prefix): return False prefix = queue.popleft() return True 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 - 회의실 배정(#1931) 백준 - 단지번호붙이기(#2667)" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/images/image-20230124164523139.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -102,7 +102,7 @@
         "@type": "WebPage",
         "@id": "https://hyu-ms.github.io/algo-phonenumber"
     },
-    "description": "from heapq import heappop, heapify def solution(phone_book): if len(phone_book)==1: return True heapify(phone_book) prefix = heappop(phone_book) while phone_book: if phone_book[0].startswith(prefix): return False prefix = heappop(phone_book) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 - 회의실 배정(#1931) 백준 - 단지번호붙이기(#2667) 백준 - 미로 탐색(#2178)"
+    "description": "from collections import deque def solution(phone_book): if len(phone_book)==1: return True phone_book.sort() queue = deque(phone_book) prefix = queue.popleft() while queue: if queue[0].startswith(prefix): return False prefix = queue.popleft() return True 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 - 회의실 배정(#1931) 백준 - 단지번호붙이기(#2667)"
 }
     </script>
 
@@ -198,18 +198,21 @@ into the {body} of the default.hbs template -->
                 <div class="kg-card-markdown">
                     <p><img src="../../assets/images/image-20230124164523139.png" alt="image-20230124164523139" /></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">heapq</span> <span class="kn">import</span> <span class="n">heappop</span><span class="p">,</span> <span class="n">heapify</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
 
 <span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">phone_book</span><span class="p">):</span>
+
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
         <span class="k">return</span> <span class="bp">True</span>
-    
-    <span class="n">heapify</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
-    <span class="n">prefix</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
-    <span class="k">while</span> <span class="n">phone_book</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">phone_book</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">):</span>
+
+    <span class="n">phone_book</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">queue</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+    <span class="n">prefix</span> <span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+    <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">queue</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">):</span>
             <span class="k">return</span> <span class="bp">False</span>
-        <span class="n">prefix</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="n">popleft</span><span class="p">()</span>
+    <span class="k">return</span> <span class="bp">True</span>
 </code></pre></div></div>
 
 <p><span class="table-of-contents-list"> </span></p>
