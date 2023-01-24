@@ -4,9 +4,41 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
-        <loc>https://hyu-ms.github.io/algo-jumpfar.html</loc>
+        <loc>https://hyu-ms.github.io/algo-phonenumber.html</loc>
         
-        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        <lastmod>2023-01-24T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-2178.html</loc>
+        
+        <lastmod>2023-01-24T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-11053.html</loc>
+        
+        <lastmod>2023-01-24T09:00:00+09:00</lastmod>
         
 
         
@@ -37,6 +69,22 @@
     
     <url>
         <loc>https://hyu-ms.github.io/algo-spicier.html</loc>
+        
+        <lastmod>2023-01-21T09:18:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-jumpfar.html</loc>
         
         <lastmod>2023-01-21T09:18:00+09:00</lastmod>
         

@@ -60,7 +60,7 @@
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="프로그래머스 - 여행경로" />
-    <meta property="og:description" content="from collections import defaultdict def solution(tickets): airports = defaultdict(list) for x,y in tickets: airports[x].append(y) for i in airports.values(): i.sort() stack = ["ICN"] route = [] while stack: tail = stack[-1] if airports[tail]: stack.append(airports[tail].pop(0)) else: path.append(stack.pop()) return route[::-1] 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 -" />
+    <meta property="og:description" content="from collections import defaultdict def solution(tickets): airports = defaultdict(list) for x,y in tickets: airports[x].append(y) for i in airports.values(): i.sort() stack = ["ICN"] path = [] while stack: tail = stack[-1] if airports[tail]: stack.append(airports[tail].pop(0)) else: path.append(stack.pop()) return path[::-1] 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 -" />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-triproute" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/images/image-20230118210931272.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -70,7 +70,7 @@
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="프로그래머스 - 여행경로" />
-    <meta name="twitter:description" content="from collections import defaultdict def solution(tickets): airports = defaultdict(list) for x,y in tickets: airports[x].append(y) for i in airports.values(): i.sort() stack = ["ICN"] route = [] while stack: tail = stack[-1] if airports[tail]: stack.append(airports[tail].pop(0)) else: path.append(stack.pop()) return route[::-1] 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 -" />
+    <meta name="twitter:description" content="from collections import defaultdict def solution(tickets): airports = defaultdict(list) for x,y in tickets: airports[x].append(y) for i in airports.values(): i.sort() stack = ["ICN"] path = [] while stack: tail = stack[-1] if airports[tail]: stack.append(airports[tail].pop(0)) else: path.append(stack.pop()) return path[::-1] 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 -" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/images/image-20230118210931272.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -102,7 +102,7 @@
         "@type": "WebPage",
         "@id": "https://hyu-ms.github.io/algo-triproute"
     },
-    "description": "from collections import defaultdict def solution(tickets): airports = defaultdict(list) for x,y in tickets: airports[x].append(y) for i in airports.values(): i.sort() stack = ["ICN"] route = [] while stack: tail = stack[-1] if airports[tail]: stack.append(airports[tail].pop(0)) else: path.append(stack.pop()) return route[::-1] 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 -"
+    "description": "from collections import defaultdict def solution(tickets): airports = defaultdict(list) for x,y in tickets: airports[x].append(y) for i in airports.values(): i.sort() stack = ["ICN"] path = [] while stack: tail = stack[-1] if airports[tail]: stack.append(airports[tail].pop(0)) else: path.append(stack.pop()) return path[::-1] 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 -"
 }
     </script>
 
@@ -208,7 +208,7 @@ into the {body} of the default.hbs template -->
         <span class="n">i</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
 
     <span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="s">"ICN"</span><span class="p">]</span>
-    <span class="n">route</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="k">while</span> <span class="n">stack</span><span class="p">:</span>
         <span class="n">tail</span> <span class="o">=</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -219,7 +219,7 @@ into the {body} of the default.hbs template -->
         <span class="k">else</span><span class="p">:</span>
             <span class="n">path</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="n">pop</span><span class="p">())</span>
 
-    <span class="k">return</span> <span class="n">route</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">path</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div></div>
 
 <p><span class="table-of-contents-list"> </span></p>
@@ -229,6 +229,9 @@ into the {body} of the default.hbs template -->
     <li><a href="./algo-11060">백준 - 점프 점프(#11060)</a></li>
     <li><a href="./algo-2805">백준 - 나무 자르기(#2805)</a></li>
     <li><a href="./algo-1931">백준 - 회의실 배정(#1931)</a></li>
+    <li><a href="./algo-2667">백준 - 단지번호붙이기(#2667)</a></li>
+    <li><a href="./algo-2178">백준 - 미로 탐색(#2178)</a></li>
+    <li><a href="./algo-2178">백준 - 가장 긴 수열(#11053)</a></li>
     <li><a href="./algo-assembly">소프티어 - 조립라인</a></li>
     <li><a href="./algo-targetnum">프로그래머스 - 타겟넘버</a></li>
     <li><a href="./algo-network">프로그래머스 - 네트워크</a></li>
@@ -239,6 +242,11 @@ into the {body} of the default.hbs template -->
     <li><a href="./algo-parkingfee">프로그래머스 - 주차 요금 계산</a></li>
     <li><a href="./algo-removepairs">프로그래머스 - 짝지어 제거하기</a></li>
     <li><a href="./algo-tournament">프로그래머스 - 예상 대진표</a></li>
+    <li><a href="./algo-jumpfar">프로그래머스 - 멀리 뛰기</a></li>
+    <li><a href="./algo-wordchange">프로그래머스 - 단어 변환</a></li>
+    <li><a href="./algo-spicier">프로그래머스 - 더 맵게</a></li>
+    <li><a href="./algo-develop">프로그래머스 - 기능 개발</a></li>
+    <li><a href="./algo-phonenumber">프로그래머스 - 전화번호 목록</a></li>
 </ul>
 
                 </div>
@@ -352,7 +360,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-jumpfar">프로그래머스 - 멀리 뛰기</a></li>
+                                            <li><a href="/algo-phonenumber">프로그래머스 - 전화번호 목록</a></li>
                                         
                                     
                                   
@@ -361,7 +369,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-wordchange">프로그래머스 - 단어변환</a></li>
+                                            <li><a href="/algo-2178">백준 - 미로 탐색(#2178)</a></li>
                                         
                                     
                                   
@@ -370,7 +378,28 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-spicier">프로그래머스 - 더 맵게</a></li>
+                                            <li><a href="/algo-11053">백준 - 가장 긴 수열(#11053)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
                                         
                                     
                                   
@@ -500,7 +529,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/algorithm/">
                                 
-                                    See all 19 posts  →
+                                    See all 22 posts  →
                                 
                             </a>
                         </footer>

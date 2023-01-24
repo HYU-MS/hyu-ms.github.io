@@ -60,7 +60,7 @@
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="프로그래머스 - 더 맵게" />
-    <meta property="og:description" content="answer=[] def dfs(begin,target,start,graph,visited,count): global answer if begin==target: answer.append(count) return visited[start]=True for i in range(len(graph)): if not visited[i]: if sum(graph[i][j]!=begin[j] for j in range(len(begin)))==1: dfs(graph[i],target,i,graph,visited,count+1) def solution(begin, target, words): if not target in words: return 0 for i in range(len(words)): if sum(words[i][j]!=begin[j] for j in range(len(begin)))==1: visited=[False]*len(words) dfs(words[i],target,i,words,visited,1) if not answer:" />
+    <meta property="og:description" content="from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;=1: if scoville[0]&gt;=K: return answer if len(scoville)==1: return -1 first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -" />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-spicier" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/images/image-20230121204833195.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -70,7 +70,7 @@
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="프로그래머스 - 더 맵게" />
-    <meta name="twitter:description" content="answer=[] def dfs(begin,target,start,graph,visited,count): global answer if begin==target: answer.append(count) return visited[start]=True for i in range(len(graph)): if not visited[i]: if sum(graph[i][j]!=begin[j] for j in range(len(begin)))==1: dfs(graph[i],target,i,graph,visited,count+1) def solution(begin, target, words): if not target in words: return 0 for i in range(len(words)): if sum(words[i][j]!=begin[j] for j in range(len(begin)))==1: visited=[False]*len(words) dfs(words[i],target,i,words,visited,1) if not answer:" />
+    <meta name="twitter:description" content="from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;=1: if scoville[0]&gt;=K: return answer if len(scoville)==1: return -1 first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/images/image-20230121204833195.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -102,7 +102,7 @@
         "@type": "WebPage",
         "@id": "https://hyu-ms.github.io/algo-spicier"
     },
-    "description": "answer=[] def dfs(begin,target,start,graph,visited,count): global answer if begin==target: answer.append(count) return visited[start]=True for i in range(len(graph)): if not visited[i]: if sum(graph[i][j]!=begin[j] for j in range(len(begin)))==1: dfs(graph[i],target,i,graph,visited,count+1) def solution(begin, target, words): if not target in words: return 0 for i in range(len(words)): if sum(words[i][j]!=begin[j] for j in range(len(begin)))==1: visited=[False]*len(words) dfs(words[i],target,i,words,visited,1) if not answer:"
+    "description": "from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;=1: if scoville[0]&gt;=K: return answer if len(scoville)==1: return -1 first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -"
 }
     </script>
 
@@ -198,33 +198,24 @@ into the {body} of the default.hbs template -->
                 <div class="kg-card-markdown">
                     <p><img src="../../assets/images/image-20230121204833195.png" alt="image-20230121204833195" /></p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">answer</span><span class="o">=</span><span class="p">[]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">heapq</span> <span class="kn">import</span> <span class="n">heapify</span><span class="p">,</span> <span class="n">heappop</span><span class="p">,</span> <span class="n">heappush</span>
+<span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">scoville</span><span class="p">,</span> <span class="n">K</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">heapify</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span>
+    
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">scoville</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;=</span><span class="n">K</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">answer</span>
 
-<span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span><span class="n">target</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">graph</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="n">count</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">answer</span>
-    <span class="k">if</span> <span class="n">begin</span><span class="o">==</span><span class="n">target</span><span class="p">:</span>
-        <span class="n">answer</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
-        <span class="k">return</span>
-    
-    <span class="n">visited</span><span class="p">[</span><span class="n">start</span><span class="p">]</span><span class="o">=</span><span class="bp">True</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">graph</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-            <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">graph</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">begin</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">begin</span><span class="p">)))</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-                <span class="n">dfs</span><span class="p">(</span><span class="n">graph</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">target</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">graph</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-                
-<span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">begin</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">words</span><span class="p">):</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="nb">sum</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">begin</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">begin</span><span class="p">)))</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-            <span class="n">visited</span><span class="o">=</span><span class="p">[</span><span class="bp">False</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
-            <span class="n">dfs</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">target</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">words</span><span class="p">,</span><span class="n">visited</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-            
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">answer</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+        <span class="n">first</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span>
+        <span class="n">second</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span>
+        <span class="n">heappush</span><span class="p">(</span><span class="n">scoville</span><span class="p">,</span><span class="n">first</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">second</span><span class="p">)</span>
+        <span class="n">answer</span><span class="o">+=</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 </code></pre></div></div>
 
 <p><span class="table-of-contents-list"> </span></p>
@@ -234,6 +225,9 @@ into the {body} of the default.hbs template -->
     <li><a href="./algo-11060">백준 - 점프 점프(#11060)</a></li>
     <li><a href="./algo-2805">백준 - 나무 자르기(#2805)</a></li>
     <li><a href="./algo-1931">백준 - 회의실 배정(#1931)</a></li>
+    <li><a href="./algo-2667">백준 - 단지번호붙이기(#2667)</a></li>
+    <li><a href="./algo-2178">백준 - 미로 탐색(#2178)</a></li>
+    <li><a href="./algo-2178">백준 - 가장 긴 수열(#11053)</a></li>
     <li><a href="./algo-assembly">소프티어 - 조립라인</a></li>
     <li><a href="./algo-targetnum">프로그래머스 - 타겟넘버</a></li>
     <li><a href="./algo-network">프로그래머스 - 네트워크</a></li>
@@ -244,6 +238,11 @@ into the {body} of the default.hbs template -->
     <li><a href="./algo-parkingfee">프로그래머스 - 주차 요금 계산</a></li>
     <li><a href="./algo-removepairs">프로그래머스 - 짝지어 제거하기</a></li>
     <li><a href="./algo-tournament">프로그래머스 - 예상 대진표</a></li>
+    <li><a href="./algo-jumpfar">프로그래머스 - 멀리 뛰기</a></li>
+    <li><a href="./algo-wordchange">프로그래머스 - 단어 변환</a></li>
+    <li><a href="./algo-spicier">프로그래머스 - 더 맵게</a></li>
+    <li><a href="./algo-develop">프로그래머스 - 기능 개발</a></li>
+    <li><a href="./algo-phonenumber">프로그래머스 - 전화번호 목록</a></li>
 </ul>
 
                 </div>
@@ -357,7 +356,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-jumpfar">프로그래머스 - 멀리 뛰기</a></li>
+                                            <li><a href="/algo-phonenumber">프로그래머스 - 전화번호 목록</a></li>
                                         
                                     
                                   
@@ -366,7 +365,23 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-wordchange">프로그래머스 - 단어변환</a></li>
+                                            <li><a href="/algo-2178">백준 - 미로 탐색(#2178)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/algo-11053">백준 - 가장 긴 수열(#11053)</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
                                         
                                     
                                   
@@ -379,7 +394,12 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-develop">프로그래머스 - 기능개발</a></li>
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
                                         
                                     
                                   
@@ -505,7 +525,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/algorithm/">
                                 
-                                    See all 19 posts  →
+                                    See all 22 posts  →
                                 
                             </a>
                         </footer>
@@ -525,7 +545,7 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template">
         
             <a class="post-card-image-link" href="/algo-wordchange">
-                <div class="post-card-image" style="background-image: url(/assets/images/image-20230121203114811.png)"></div>
+                <div class="post-card-image" style="background-image: url(/assets/images/image-20230121204458936.png)"></div>
             </a>
         
         <div class="post-card-content">
@@ -578,12 +598,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/algo-develop">
-                <div class="post-card-image" style="background-image: url(/assets/images/image-20230121205305328.png)"></div>
+            <a class="post-card-image-link" href="/algo-jumpfar">
+                <div class="post-card-image" style="background-image: url(/assets/images/image-20230121205901869.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/algo-develop">
+            <a class="post-card-content-link" href="/algo-jumpfar">
                 <header class="post-card-header">
                     
                         
@@ -593,7 +613,7 @@ into the {body} of the default.hbs template -->
                         
                     
 
-                    <h2 class="post-card-title">프로그래머스 - 기능개발</h2>
+                    <h2 class="post-card-title">프로그래머스 - 멀리 뛰기</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
