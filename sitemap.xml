@@ -4,6 +4,166 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://hyu-ms.github.io/algo-truck.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-stockprice.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-printer.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-primenum.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-nosamenum.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-nightwork.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-exam.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-cuttingwires.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-camouflage.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-bestalbum.html</loc>
+        
+        <lastmod>2023-01-25T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://hyu-ms.github.io/algo-phonenumber.html</loc>
         
         <lastmod>2023-01-24T09:00:00+09:00</lastmod>
