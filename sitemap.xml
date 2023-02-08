@@ -4,6 +4,102 @@
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://hyu-ms.github.io/life-boocam.html</loc>
+        
+        <lastmod>2023-02-09T00:14:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-tuple.html</loc>
+        
+        <lastmod>2023-02-08T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-supercom.html</loc>
+        
+        <lastmod>2023-02-08T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-2579.html</loc>
+        
+        <lastmod>2023-02-08T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-1012.html</loc>
+        
+        <lastmod>2023-02-08T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>https://hyu-ms.github.io/algo-12865.html</loc>
+        
+        <lastmod>2023-01-26T09:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>https://hyu-ms.github.io/algo-doublepriority.html</loc>
         
         <lastmod>2023-01-26T09:00:00+09:00</lastmod>
@@ -519,22 +615,6 @@
         <loc>https://hyu-ms.github.io/algo-assembly.html</loc>
         
         <lastmod>2023-01-08T09:23:00+09:00</lastmod>
-        
-
-        
-        <changefreq>weekly</changefreq>
-        
-
-        
-        <priority>0.5</priority>
-        
-
-    </url>
-    
-    <url>
-        <loc>https://hyu-ms.github.io/life-traits.html</loc>
-        
-        <lastmod>2022-12-24T19:18:00+09:00</lastmod>
         
 
         

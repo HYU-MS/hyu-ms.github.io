@@ -60,7 +60,7 @@
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="프로그래머스 - 더 맵게" />
-    <meta property="og:description" content="from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;=1: if scoville[0]&gt;=K: return answer if len(scoville)==1: return -1 first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -" />
+    <meta property="og:description" content="from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;1: if scoville[0]&gt;=K: return answer first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 if scoville[0]&gt;=K: return answer return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -" />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-spicier" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/images/image-20230121204833195.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -70,7 +70,7 @@
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="프로그래머스 - 더 맵게" />
-    <meta name="twitter:description" content="from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;=1: if scoville[0]&gt;=K: return answer if len(scoville)==1: return -1 first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -" />
+    <meta name="twitter:description" content="from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;1: if scoville[0]&gt;=K: return answer first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 if scoville[0]&gt;=K: return answer return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/images/image-20230121204833195.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -102,7 +102,7 @@
         "@type": "WebPage",
         "@id": "https://hyu-ms.github.io/algo-spicier"
     },
-    "description": "from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;=1: if scoville[0]&gt;=K: return answer if len(scoville)==1: return -1 first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -"
+    "description": "from heapq import heapify, heappop, heappush def solution(scoville, K): answer = 0 heapify(scoville) while len(scoville)&gt;1: if scoville[0]&gt;=K: return answer first = heappop(scoville) second = heappop(scoville) heappush(scoville,first+2*second) answer+=1 if scoville[0]&gt;=K: return answer return -1 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프 점프(#11060) 백준 - 나무 자르기(#2805) 백준 -"
 }
     </script>
 
@@ -203,18 +203,17 @@ into the {body} of the default.hbs template -->
     <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">heapify</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span>
     
-    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">1</span><span class="p">:</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">scoville</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;=</span><span class="n">K</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">answer</span>
-
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
-            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 
         <span class="n">first</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span>
         <span class="n">second</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">scoville</span><span class="p">)</span>
         <span class="n">heappush</span><span class="p">(</span><span class="n">scoville</span><span class="p">,</span><span class="n">first</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">second</span><span class="p">)</span>
         <span class="n">answer</span><span class="o">+=</span><span class="mi">1</span>
-
+        
+    <span class="k">if</span> <span class="n">scoville</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;=</span><span class="n">K</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">answer</span>
     <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 </code></pre></div></div>
 
@@ -254,6 +253,8 @@ into the {body} of the default.hbs template -->
     <li><a href="./algo-printer">프로그래머스 - 프린터</a></li>
     <li><a href="./algo-stockprice">프로그래머스 - 주식 가격</a></li>
     <li><a href="./algo-truck">프로그래머스 - 다리 위를 지나는 트럭</a></li>
+    <li><a href="./algo-doublepriority">프로그래머스 - 이중우선순위큐</a></li>
+    <li><a href="./algo-1260">백준 - DFS와 BFS(#1260)</a></li>
 </ul>
 
                 </div>
@@ -364,10 +365,12 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
+                                
+                                  
                                     
                                         
                                         
-                                            <li><a href="/algo-doublepriority">프로그래머스 - 이중우선순위큐</a></li>
+                                            <li><a href="/algo-tuple">프로그래머스 - 튜플</a></li>
                                         
                                     
                                   
@@ -376,7 +379,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-1260">백준 - DFS와 BFS(#1260)</a></li>
+                                            <li><a href="/algo-supercom">소프티어 - 슈퍼컴퓨터 클러스터</a></li>
                                         
                                     
                                   
@@ -385,103 +388,8 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-truck">프로그래머스 - 다리 위를 지나는 트럭</a></li>
+                                            <li><a href="/algo-2579">백준 - 계단 오르기(#2579)</a></li>
                                         
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
                                     
                                   
                                 
@@ -597,6 +505,134 @@ into the {body} of the default.hbs template -->
                                     
                                   
                                 
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                                   
@@ -620,7 +656,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/algorithm/">
                                 
-                                    See all 34 posts  →
+                                    See all 39 posts  →
                                 
                             </a>
                         </footer>

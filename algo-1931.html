@@ -60,7 +60,7 @@
     <meta property="og:site_name" content="Moony Vibes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="백준 - 회의실 배정(#1931)" />
-    <meta property="og:description" content="백준 1931번 import sys input = sys.stdin.readline n = int(input()) meetings=[list(map(int,input().split())) for _ in range(n)] meetings = sorted(meetings, key=lambda x:(x[1], x[0])) end_time = 0 count=0 for meeting in meetings: if meeting[0] &gt;= end_time: count += 1 end_time = meeting[1] print(count) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프" />
+    <meta property="og:description" content="백준 1931번 import sys input = sys.stdin.readline from heapq import heappush,heappop N = int(input()) meetings = [] for i in range(N): a,b = map(int,input().split()) heappush(meetings, (b,a)) end_time = 0 cnt=0 while meetings: if meetings[0][1]&gt;=end_time: cnt+=1 end_time = heappop(meetings)[0] continue heappop(meetings) print(cnt) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 -" />
     <meta property="og:url" content="https://hyu-ms.github.io/algo-1931" />
     <meta property="og:image" content="https://hyu-ms.github.io/assets/images/image-20230119052317617.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
@@ -70,7 +70,7 @@
     <meta property="article:tag" content="Algorithm" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="백준 - 회의실 배정(#1931)" />
-    <meta name="twitter:description" content="백준 1931번 import sys input = sys.stdin.readline n = int(input()) meetings=[list(map(int,input().split())) for _ in range(n)] meetings = sorted(meetings, key=lambda x:(x[1], x[0])) end_time = 0 count=0 for meeting in meetings: if meeting[0] &gt;= end_time: count += 1 end_time = meeting[1] print(count) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프" />
+    <meta name="twitter:description" content="백준 1931번 import sys input = sys.stdin.readline from heapq import heappush,heappop N = int(input()) meetings = [] for i in range(N): a,b = map(int,input().split()) heappush(meetings, (b,a)) end_time = 0 cnt=0 while meetings: if meetings[0][1]&gt;=end_time: cnt+=1 end_time = heappop(meetings)[0] continue heappop(meetings) print(cnt) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 -" />
     <meta name="twitter:url" content="https://hyu-ms.github.io/" />
     <meta name="twitter:image" content="https://hyu-ms.github.io/assets/images/image-20230119052317617.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -102,7 +102,7 @@
         "@type": "WebPage",
         "@id": "https://hyu-ms.github.io/algo-1931"
     },
-    "description": "백준 1931번 import sys input = sys.stdin.readline n = int(input()) meetings=[list(map(int,input().split())) for _ in range(n)] meetings = sorted(meetings, key=lambda x:(x[1], x[0])) end_time = 0 count=0 for meeting in meetings: if meeting[0] &gt;= end_time: count += 1 end_time = meeting[1] print(count) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 - 점프"
+    "description": "백준 1931번 import sys input = sys.stdin.readline from heapq import heappush,heappop N = int(input()) meetings = [] for i in range(N): a,b = map(int,input().split()) heappush(meetings, (b,a)) end_time = 0 cnt=0 while meetings: if meetings[0][1]&gt;=end_time: cnt+=1 end_time = heappop(meetings)[0] continue heappop(meetings) print(cnt) 백준 - 섬의 개수(#4963) 백준 - 치즈(#2638) 백준 -"
 }
     </script>
 
@@ -202,19 +202,23 @@ into the {body} of the default.hbs template -->
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
 <span class="nb">input</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="n">readline</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="kn">from</span> <span class="nn">heapq</span> <span class="kn">import</span> <span class="n">heappush</span><span class="p">,</span><span class="n">heappop</span>
 
-<span class="n">meetings</span><span class="o">=</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">()))</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
-<span class="n">meetings</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">meetings</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">meetings</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">())</span>
+    <span class="n">heappush</span><span class="p">(</span><span class="n">meetings</span><span class="p">,</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">))</span>
+	
 <span class="n">end_time</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">count</span><span class="o">=</span><span class="mi">0</span>
-<span class="k">for</span> <span class="n">meeting</span> <span class="ow">in</span> <span class="n">meetings</span><span class="p">:</span>
-	<span class="k">if</span> <span class="n">meeting</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">end_time</span><span class="p">:</span>
-		<span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-		<span class="n">end_time</span> <span class="o">=</span> <span class="n">meeting</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+<span class="n">cnt</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">while</span> <span class="n">meetings</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">meetings</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;=</span><span class="n">end_time</span><span class="p">:</span>
+        <span class="n">cnt</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="n">end_time</span> <span class="o">=</span> <span class="n">heappop</span><span class="p">(</span><span class="n">meetings</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">continue</span>
+    <span class="n">heappop</span><span class="p">(</span><span class="n">meetings</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p><span class="table-of-contents-list"> </span></p>
@@ -253,6 +257,8 @@ into the {body} of the default.hbs template -->
     <li><a href="./algo-printer">프로그래머스 - 프린터</a></li>
     <li><a href="./algo-stockprice">프로그래머스 - 주식 가격</a></li>
     <li><a href="./algo-truck">프로그래머스 - 다리 위를 지나는 트럭</a></li>
+    <li><a href="./algo-doublepriority">프로그래머스 - 이중우선순위큐</a></li>
+    <li><a href="./algo-1260">백준 - DFS와 BFS(#1260)</a></li>
 </ul>
 
                 </div>
@@ -363,10 +369,12 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
+                                
+                                  
                                     
                                         
                                         
-                                            <li><a href="/algo-doublepriority">프로그래머스 - 이중우선순위큐</a></li>
+                                            <li><a href="/algo-tuple">프로그래머스 - 튜플</a></li>
                                         
                                     
                                   
@@ -375,7 +383,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-1260">백준 - DFS와 BFS(#1260)</a></li>
+                                            <li><a href="/algo-supercom">소프티어 - 슈퍼컴퓨터 클러스터</a></li>
                                         
                                     
                                   
@@ -384,21 +392,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/algo-truck">프로그래머스 - 다리 위를 지나는 트럭</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
+                                            <li><a href="/algo-2579">백준 - 계단 오르기(#2579)</a></li>
                                         
                                     
                                   
@@ -559,6 +553,55 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
                                   
                                 
                                   
@@ -594,8 +637,6 @@ into the {body} of the default.hbs template -->
                                         
                                         
                                     
-                                  
-                                
                                   
                                 
                                   
@@ -619,7 +660,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/algorithm/">
                                 
-                                    See all 34 posts  →
+                                    See all 39 posts  →
                                 
                             </a>
                         </footer>
