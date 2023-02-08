@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://hyu-ms.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hyu-ms.github.io/" rel="alternate" type="text/html" /><updated>2023-02-09T02:18:31+09:00</updated><id>https://hyu-ms.github.io/feed.xml</id><title type="html">Moony Vibes</title><subtitle>IT&amp;Finance</subtitle><entry><title type="html">부스트캠프 AI tech 5기 합격 후기</title><link href="https://hyu-ms.github.io/life-boocam" rel="alternate" type="text/html" title="부스트캠프 AI tech 5기 합격 후기" /><published>2023-02-09T00:14:00+09:00</published><updated>2023-02-09T00:14:00+09:00</updated><id>https://hyu-ms.github.io/life-boocam</id><content type="html" xml:base="https://hyu-ms.github.io/life-boocam">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230208231110716.png&quot; alt=&quot;	&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://hyu-ms.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hyu-ms.github.io/" rel="alternate" type="text/html" /><updated>2023-02-09T02:25:18+09:00</updated><id>https://hyu-ms.github.io/feed.xml</id><title type="html">Moony Vibes</title><subtitle>IT&amp;Finance</subtitle><entry><title type="html">부스트캠프 AI tech 5기 합격 후기</title><link href="https://hyu-ms.github.io/life-boocam" rel="alternate" type="text/html" title="부스트캠프 AI tech 5기 합격 후기" /><published>2023-02-09T00:14:00+09:00</published><updated>2023-02-09T00:14:00+09:00</updated><id>https://hyu-ms.github.io/life-boocam</id><content type="html" xml:base="https://hyu-ms.github.io/life-boocam">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230208231110716.png&quot; alt=&quot;	&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;안녕하세요!&lt;/p&gt;
 
@@ -74,11 +74,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -100,7 +105,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html">백준 1012</summary></entry><entry><title type="html">프로그래머스 - 튜플</title><link href="https://hyu-ms.github.io/algo-tuple" rel="alternate" type="text/html" title="프로그래머스 - 튜플" /><published>2023-02-08T09:00:00+09:00</published><updated>2023-02-08T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-tuple</id><content type="html" xml:base="https://hyu-ms.github.io/algo-tuple">&lt;p&gt;​	&lt;img src=&quot;../../assets/images/image-20230209020144239.png&quot; alt=&quot;image-20230209020144239&quot; /&gt;&lt;img src=&quot;../../assets/images/image-20230209020239916.png&quot; alt=&quot;image-20230209020239916&quot; /&gt;&lt;img src=&quot;../../assets/images/image-20230209020329566.png&quot; alt=&quot;image-20230209020329566&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
@@ -127,11 +131,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -153,7 +162,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html">​</summary></entry><entry><title type="html">소프티어 - 슈퍼컴퓨터 클러스터</title><link href="https://hyu-ms.github.io/algo-supercom" rel="alternate" type="text/html" title="소프티어 - 슈퍼컴퓨터 클러스터" /><published>2023-02-08T09:00:00+09:00</published><updated>2023-02-08T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-supercom</id><content type="html" xml:base="https://hyu-ms.github.io/algo-supercom">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230209015642262.png&quot; alt=&quot;image-20230209015642262&quot; /&gt;&lt;img src=&quot;../../assets/images/image-20230209015703022.png&quot; alt=&quot;image-20230209015703022&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
@@ -195,11 +203,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -221,7 +234,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html"></summary></entry><entry><title type="html">백준 - 계단 오르기(#2579)</title><link href="https://hyu-ms.github.io/algo-2579" rel="alternate" type="text/html" title="백준 - 계단 오르기(#2579)" /><published>2023-02-08T09:00:00+09:00</published><updated>2023-02-08T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-2579</id><content type="html" xml:base="https://hyu-ms.github.io/algo-2579">&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2579&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;백준 2579&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230209013556895.png&quot; alt=&quot;image-20230209013556895&quot; /&gt;&lt;img src=&quot;../../assets/images/image-20230209013619947.png&quot; alt=&quot;image-20230209013619947&quot; /&gt;&lt;/p&gt;
@@ -253,11 +265,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -279,7 +296,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html">백준 2579</summary></entry><entry><title type="html">백준 - DFS와 BFS(#1260)</title><link href="https://hyu-ms.github.io/algo-1260" rel="alternate" type="text/html" title="백준 - DFS와 BFS(#1260)" /><published>2023-01-26T09:00:00+09:00</published><updated>2023-01-26T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-1260</id><content type="html" xml:base="https://hyu-ms.github.io/algo-1260">&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/1260&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;백준 1260&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230126152602681.png&quot; alt=&quot;image-20230126152602681&quot; /&gt;&lt;/p&gt;
@@ -339,11 +355,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -365,7 +386,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html">백준 1260</summary></entry><entry><title type="html">백준 - 평범한 배낭(#12865)</title><link href="https://hyu-ms.github.io/algo-12865" rel="alternate" type="text/html" title="백준 - 평범한 배낭(#12865)" /><published>2023-01-26T09:00:00+09:00</published><updated>2023-01-26T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-12865</id><content type="html" xml:base="https://hyu-ms.github.io/algo-12865">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230209014222712.png&quot; alt=&quot;image-20230209014222712&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
@@ -393,11 +413,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -419,7 +444,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html"></summary></entry><entry><title type="html">프로그래머스 - 이중우선순위큐</title><link href="https://hyu-ms.github.io/algo-doublepriority" rel="alternate" type="text/html" title="프로그래머스 - 이중우선순위큐" /><published>2023-01-26T09:00:00+09:00</published><updated>2023-01-26T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-doublepriority</id><content type="html" xml:base="https://hyu-ms.github.io/algo-doublepriority">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230126160437508.png&quot; alt=&quot;image-20230126160437508&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;heapq&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;heappush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;heappop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nlargest&lt;/span&gt;
@@ -454,11 +478,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -480,7 +509,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html"></summary></entry><entry><title type="html">프로그래머스 - 다리 위를 지나는 트럭</title><link href="https://hyu-ms.github.io/algo-truck" rel="alternate" type="text/html" title="프로그래머스 - 다리 위를 지나는 트럭" /><published>2023-01-25T09:00:00+09:00</published><updated>2023-01-25T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-truck</id><content type="html" xml:base="https://hyu-ms.github.io/algo-truck">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230125193546531.png&quot; alt=&quot;image-20230125193546531&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;
@@ -517,11 +545,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -543,7 +576,6 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html"></summary></entry><entry><title type="html">프로그래머스 - 주식 가격</title><link href="https://hyu-ms.github.io/algo-stockprice" rel="alternate" type="text/html" title="프로그래머스 - 주식 가격" /><published>2023-01-25T09:00:00+09:00</published><updated>2023-01-25T09:00:00+09:00</updated><id>https://hyu-ms.github.io/algo-stockprice</id><content type="html" xml:base="https://hyu-ms.github.io/algo-stockprice">&lt;p&gt;&lt;img src=&quot;../../assets/images/image-20230125141702434.png&quot; alt=&quot;image-20230125141702434&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;
@@ -578,11 +610,16 @@
     &lt;li&gt;&lt;a href=&quot;./algo-2178&quot;&gt;백준 - 미로 탐색(#2178)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-11053&quot;&gt;백준 - 가장 긴 증가하는 부분 수열(#11053)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-2579&quot;&gt;백준 - 계단 오르기(#2579)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-1012&quot;&gt;백준 - 유기농 배추(#1012)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-12865&quot;&gt;백준 - 평범한 배낭(#12865)&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-assembly&quot;&gt;소프티어 - 조립라인&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-supercom&quot;&gt;소프티어 - 슈퍼컴퓨터 클러스터&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-targetnum&quot;&gt;프로그래머스 - 타겟넘버&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-network&quot;&gt;프로그래머스 - 네트워크&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-camera&quot;&gt;프로그래머스 - 단속카메라&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parenthesis&quot;&gt;프로그래머스 - 올바른 괄호&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;./algo-tuple&quot;&gt;프로그래머스 - 튜플&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-triproute&quot;&gt;프로그래머스 - 여행 경로&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-lifeboat&quot;&gt;프로그래머스 - 구명보트&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-parkingfee&quot;&gt;프로그래머스 - 주차 요금 계산&lt;/a&gt;&lt;/li&gt;
@@ -604,5 +641,4 @@
     &lt;li&gt;&lt;a href=&quot;./algo-stockprice&quot;&gt;프로그래머스 - 주식 가격&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-truck&quot;&gt;프로그래머스 - 다리 위를 지나는 트럭&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;./algo-doublepriority&quot;&gt;프로그래머스 - 이중우선순위큐&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;./algo-1260&quot;&gt;백준 - DFS와 BFS(#1260)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Moon</name></author><category term="algorithm" /><summary type="html"></summary></entry></feed>
